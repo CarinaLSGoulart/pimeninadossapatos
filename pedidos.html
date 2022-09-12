@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pimeninadossapatos/estilo/pedidos.css">
+    <title>Menina dos Sapatos - Pedidos</title>    
+</head>
+
+<body>
+    <header>
+        <div class="header"></div>
+    </header>
+
+    <main>       
+            <div>
+                <nav id="submenu">
+                    <ul>
+                        <li class="menu1"><a class="link1" href="#">Identificação</a></li>
+                        <li class="menu1"><a class="link1" href="#">Endereço e Pagamento</a></li>
+                        <li class="menu1"><a class="link1" href="#">Confirmação</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <section class="pedido-container">
+            <form class="formulario" action="" method="post">
+                <div class="endereço-container">
+                    <h2>1. Endereços</h2>
+                    <h3>Endereço Principal</h3>
+                    <!--CARREGA ENDEREÇO DO BANCO DE DADOS-->
+                    <h3>Endereço de Entrega</h3>
+                    <!--CARREGA ENDEREÇO DO BANCO DE DADOS-->
+                    <ul class="endereço">
+                        <li class="end01"><a class="link1" href="#">Editar</a></li>
+                        <li class="end01"><a class="link1" href="#">Selecionar outro</a></li>
+                    </ul>
+                    <button>Inserir novo endereço</button>
+                    <p><input type="checkbox" name="endereco" id="endereco" value="endereco"><label>Endereço de entrega
+                        igual ao endereço principal</label></p>
+                </div>
+
+                <div>
+                    <h2>2. Opções de Entrega</h2>
+                    <p><input type="radio" name="entrega" id="entrega" value="entrega"><label>Normal</label></p>
+                    <p><input type="radio" name="entrega" id="entrega" value="entrega"><label>Retire no local</label>
+                    </p>
+                </div>
+
+                <div>
+                    <h2>3. Forma de Pagamento</h2>
+                    <img class="cartaocredito" src="imagens/cartao-de-credito.png" alt="cartaocredito">
+                    <input type="radio" name="pagamento" id="pagamento" value="pagamento"><label>Cartão Crédito/
+                        Débito</label>
+
+                    <h3>1. Dados do Cartão</h3>
+                    <p> <label for="numero">Numero do Cartão</label>
+                        <input type="text" name="numero" id="numero" required>
+                    </p>
+                    <p> <label for="nome">Seu Nome (como no cartão)</label>
+                        <input type="text" name="nomecartao" id="nomecartao" required>
+                    </p>
+                    <p> <label for="vencimento">Vencimento</label>
+                        <select name="mes" id="mes">
+                            <option selected disabled>Selecione</option>
+                            <option value="jan">01</option>
+                            <option value="fev">02</option>
+                            <option value="mar">03</option>
+                            <option value="abr">04</option>
+                            <option value="mai">05</option>
+                            <option value="jun">06</option>
+                            <option value="jul">07</option>
+                            <option value="ago">08</option>
+                            <option value="set">09</option>
+                            <option value="out">10</option>
+                            <option value="nov">11</option>
+                            <option value="dez">12</option>
+                        </select>
+                        <select name="ano" id="ano">
+                            <option selected disabled>Selecione</option>
+                            <option value="jan">22</option>
+                            <option value="fev">23</option>
+                            <option value="mar">24</option>
+                            <option value="abr">25</option>
+                            <option value="mai">26</option>
+                            <option value="jun">27</option>
+                            <option value="jul">28</option>
+                            <option value="ago">29</option>
+                            <option value="set">30</option>
+                        </select>
+                    </p>
+                    <h3>2. Autenticação</h3>
+                    <p>Para sua segurança será solicitada a autenticação do seu cartão de crédito/débito ao clicar em
+                        'Finalizar Compra'.</p>
+
+                    <img class="boleto" src="imagens/codigo-de-barras.png" alt="codigobarra"><input type="radio"
+                        name="pagamento" id="pagamento" value="pagamento"><label>Boleto</label>
+                </div>
+
+                <div>
+                    <h2>Resumo da Compra</h2> <!--Informações deverão ser carregadas via JS-->
+                    <img class="sapato" src="imagens/tenis branco.jpg" alt="tenis">
+                    <p>Tenis Branco <br> 
+                        Tamanho: 37 / Quantidade: 1 <br>
+                        R$ 100,00</p>
+
+                    <p>Cupom de Desconto e Vale Troca</p>
+                    <p><input type="text" name="cupom" id="cupom" placeholder="Cupom de Desconto">
+                        <button>Aplicar</button>
+                    </p>
+                    <p><input type="text" name="valetroca" id="valetroca" placeholder="Vale Troca">
+                        <button>Aplicar</button>
+                    </p>
+
+                    <h3>Subtotal:</h3>
+                    <h3>Frete:</h3>
+                    <h3>TOTAL:</h3>
+                    <button class="finalizar">Finalizar Compra</button>
+                    <p>Ao continuar, declaro que estou ciente e aceito os <a class="link1" href="#"><strong>Termos de Uso</strong></a> e a <a class="link1" href="#"><strong>Política de Privacidade</strong></a></p>
+                    <input type="checkbox" name="recebernovidades" id="recebernovidades"><label
+                        for="recebernovidades">Quero receber novidades por email</label>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer"></div>
+    </footer>
+
+</body>
+
+</html>
