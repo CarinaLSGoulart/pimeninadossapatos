@@ -9,7 +9,7 @@
   font-style: normal;
   text-decoration: none;
   box-sizing: border-box;
-  
+
 }
 
 #menu {
@@ -44,23 +44,33 @@
 /* CENTRALIZAR LOGO E NAO MOVIMENTAR Ao EXECUTAR ANIMAÇÃO DE PESQUISAR */
 .logo img {
   width: 90%;
-  
+  position: relative;
+  left: 100px;
+
+}
+
+.anim-lupa {
+  width: 130px;
+  margin-left: 70px;
+  left: 80px;
+
 }
 
 .pesquisa {
+  display: flex;
   position: relative;
+  align-items: center;
   height: 40px;
   left: 120px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50px;
-  border: black solid 1px;
+  gap: 5px;
+
+  /* background-color: rgb(255, 255, 255); */
+  /* border-radius: 50px; */
+  /* border: black solid 1px; */
 }
 
 .input {
-  background: none;
+  /* background: none; */
   border: none;
   outline: none;
   width: 0;
@@ -69,7 +79,8 @@
 }
 
 .pesquisa:hover>.input {
-  width: 50%;
+  width: 60%;
+
 }
 
 .lente {
@@ -94,6 +105,7 @@
   margin: 10px 0;
   padding: 20px 20px;
   width: 300px;
+
 }
 
 .icones {
@@ -106,7 +118,10 @@
   /* transition: 0.6seg; */
 }
 
-.icon-icones/* :hover  */{
+.icon-icones
+
+/* :hover  */
+  {
   background-color: #FFCC01;
   display: flex;
   align-items: center;
@@ -134,8 +149,8 @@ footer {
   width: 80%;
   height: 100px;
   display: flex;
-  
-  
+
+
   align-items: center;
 }
 
@@ -163,7 +178,7 @@ footer {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-right: 20px;
-  
+
 }
 
 .redes-socias {
@@ -171,7 +186,7 @@ footer {
   display: flex;
   height: 40px;
   justify-content: center;
-  
+
   list-style: none;
 }
 
@@ -217,5 +232,3 @@ footer {
   }
 
 }
-
-
