@@ -7,13 +7,8 @@
     font-weight: normal;
 }
 
-header,
-footer {
-    width: 100%;
-    margin: 5px;
-    padding: 5px;
-    border: 2px solid #9B9B9B;
-    border-radius: 5px;
+.formulario {
+    margin: 40px 30px;
 }
 
 h1 {
@@ -24,6 +19,10 @@ h1 {
 h2 {
     font-weight: bold;
     font-size: 16px;
+}
+
+h3 {
+    font-weight: bold;
 }
 
 .subMenu {
@@ -38,12 +37,12 @@ nav#submenu {
     justify-content: center;
 }
 
-a.link01 {
+a.link1 {
     text-decoration: none;
     color: black;
 }
 
-a.link01:hover {
+a.link1:hover {
     text-decoration: underline;
 }
 
@@ -60,54 +59,68 @@ ul {
     color: black
 }
 
-.end01 {
-    font-size: 12px;
-    display: inline-block;
-    padding: 10px;
-    text-align: end;
-}
-#pedido-container {
-    width: 100%;
-    margin-top: 20px;
+.endereço {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
+}
+
+.end01 {
+    font-size: 12px;
+    display: inline-block;    
+    padding: 10px;
+}
+
+.inserir {
+    width: 80%;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#pedido-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    grid-gap: 10px;   
+    width: 1300px;
+    max-width: 100%; 
 }
 
 .endereço-container {
-    width: 20%;
-    border: 2px solid #9B9B9B;
+    border: 2px solid whitesmoke;
     border-radius: 5px;
     padding: 15px;
     margin-top: 5px;
     margin-left: 2px;
     order: 1;
+    grid-column: 1;
+    grid-row: 1 / 3;
 }
 
 .entrega-container {
-    width: 25%;
-    border: 2px solid #9B9B9B;
+    border: 2px solid whitesmoke;
     border-radius: 5px;
     padding: 15px;
     margin-top: 5px;
     margin-left: 2px;
     order: 2;
+    height: 210px;
+    grid-column: 2;
+    grid-row: 1;
 }
 
 .pagamento-container {
-    width: 25%;
-    border: 2px solid #9B9B9B;
+    border: 2px solid whitesmoke;
     border-radius: 5px;
     padding: 15px;
     margin-top: -504px;
     margin-left: 2px;
     order: 4;
+    grid-column: 2;
+    grid-row: 2 / 4;
 }
 
 .resumo-container {
-    width: 30%;
-    border: 2px solid #9B9B9B;
+    border: 2px solid whitesmoke;
     border-radius: 5px;
     padding: 15px;
     margin-top: 5px;
@@ -118,13 +131,22 @@ ul {
 form input:not([type='radio']):not([type='checkbox']),
 form textarea,
 form select {
-    width: 50%;
+    width: 45%;
     padding: 3px;
-    border: 1px solid #9B9B9B;
+    border: 1px solid whitesmoke;
     border-radius: 5px;
     border-color: #C4C4C4;
     margin-bottom: 15px;
     resize: none;
+}
+
+input#cupom, input#valetroca {
+    width: 60%
+}
+
+.aplicar {
+    width: 30%;
+    margin-left: 8px;
 }
 
 .cartao1,
@@ -147,14 +169,17 @@ a.link2:hover {
 }
 
 button {
-    background-color: white;
-    color: #FFCC01;
+    background-color: #FFCC01;
+    font-weight: bold;
+    color: white;
     border-color: #FFCC01;
     border-radius: 5px;
     padding: 5px;
 }
 
 .finalizar {
+    margin-left: 60px;
+    width: 70%;
     background-color: #FFCC01;
     font-weight: bold;
     color: white;
