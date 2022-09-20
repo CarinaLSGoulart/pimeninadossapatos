@@ -1,0 +1,214 @@
+@import url("https://use.typekit.net/ftz1xgo.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.acesso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 2%;
+}
+
+.acesse {
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    margin: 0%;
+}
+
+.imagensAcesso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagensAcesso .logoGoogle {
+    align-items: center;
+}
+
+.imagensAcesso .logoFacebook {
+    align-items: center;
+    padding-left: 2%;
+}
+
+.imagensAcesso .logoApple {
+    align-items: center;
+    padding-left: 2%;
+}
+
+.boxAviso {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 9px;
+    width: 100%;
+    align-items: center;
+    padding: 0%;
+    padding-left: 5%;
+}
+
+.aviso {
+    display: flex;
+    justify-content: space-between;
+    width: 10px;
+    height: 10px;
+    align-items: center;
+    padding: 0%;
+}
+
+.textpaviso {
+    padding: 10px;
+}
+
+form {
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    padding: 6px 10px;
+    margin: 12px 2px;
+    box-sizing: border-box;
+}
+
+form input {
+    padding: 10px;
+    width: 100px;
+    border: 1px solid gray;
+    border-radius: 10px;
+
+}
+
+.div.inputBox {
+    margin-bottom: 60px;
+    padding: 10px;
+    margin: 6px 80px;
+}
+
+input#conectado,
+input#termos,
+input#conectado1 {
+    margin: 0%;
+    padding: 0%;
+    width: 10%;
+
+}
+
+form button {
+    background-color: #FFCC01;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    cursor: pointer;
+}
+
+form label {
+    margin-left: 10px;
+}
+
+form input:focus {
+    background-color: #f7f1dc;
+}
+
+fieldset {
+    border: 1px solid #FFCC01;
+    border-radius: 10px;
+    width: 400px;
+
+}
+
+legend {
+    background-color: #FFCC01;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    color: black;
+}
+
+.inputUser {
+    width: 100%;
+    outline: none;
+    color: black;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+
+i {
+    color: #FFCC01;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.icon {
+    display: flexbox;
+}
+
+.conectado {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    font-size: 10px;
+}
+
+
+.formularios {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+
+}
+
+.titulo1 {
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.titulo2 {
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a {
+    padding: 20px;
+    color: black;
+    font-size: 10px;
+}
+
+.tenhoCadastro {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.queroMeCadastrar {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
