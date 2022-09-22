@@ -9,7 +9,7 @@
   font-style: normal;
   text-decoration: none;
   box-sizing: border-box;
-  
+
 }
 
 #menu {
@@ -47,29 +47,43 @@
 
 /* CENTRALIZAR LOGO E NAO MOVIMENTAR Ao EXECUTAR ANIMAÇÃO DE PESQUISAR */
 .logo img {
+<<<<<<< HEAD
+  width: 90%;
+  position: relative;
+  left: 100px;
+
+}
+
+.anim-lupa {
+  width: 130px;
+  margin-left: 70px;
+  left: 80px;
+=======
   width: 30%;
   position: fixed;
   width:auto;
   height:90px;
   left: 45%;
   top:1px;
+>>>>>>> aa89022547324ea056e1e3b6703d4e1a42121241
 
 }
 
 .pesquisa {
+  display: flex;
   position: relative;
+  align-items: center;
   height: 40px;
   left: 120px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50px;
-  border: black solid 1px;
+  gap: 5px;
+
+  /* background-color: rgb(255, 255, 255); */
+  /* border-radius: 50px; */
+  /* border: black solid 1px; */
 }
 
 .input {
-  background: none;
+  /* background: none; */
   border: none;
   outline: none;
   width: 0;
@@ -78,7 +92,8 @@
 }
 
 .pesquisa:hover>.input {
-  width: 50%;
+  width: 60%;
+
 }
 
 .lente {
@@ -103,6 +118,7 @@
   margin: 10px 0;
   padding: 20px 20px;
   width: 300px;
+
 }
 
 .icones {
@@ -115,7 +131,15 @@
   /* transition: 0.6seg; */
 }
 
+<<<<<<< HEAD
+.icon-icones
+
+/* :hover  */
+  {
+  background-color: #FFCC01;
+=======
 .icon-icones/* :hover  */{
+>>>>>>> aa89022547324ea056e1e3b6703d4e1a42121241
   display: flex;
   align-items: center;
   margin-right: 10px;
@@ -174,7 +198,7 @@ footer {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-right: 20px;
-  
+
 }
 
 .redes-socias {
@@ -182,6 +206,10 @@ footer {
   width: 200px;
   height: 40px;
   justify-content: center;
+<<<<<<< HEAD
+
+=======
+>>>>>>> aa89022547324ea056e1e3b6703d4e1a42121241
   list-style: none;
  
 }
@@ -234,5 +262,3 @@ footer {
   }
 
 }
-
-
