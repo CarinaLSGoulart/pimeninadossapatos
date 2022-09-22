@@ -1,49 +1,218 @@
-.body{
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  
-}
-.content{
-  height: 500px;
+.content {
+  height: 600px;
   max-width: 100%;
   border-end-end-radius: 10px;
   border-end-start-radius: 10px;
   overflow: hidden;
+  margin-top: 50px;
 }
 
-.slide1 img{
+.slide1 img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.slide img {
   width: 100%;
 }
-.slide img{
-  width: 100%;
-}
-.navigation{
+
+.navigation {
   position: absolute;
   bottom: 20px;
   left: 43%;
   translate: translate(-50%);
   display: flex;
 }
-/* input{
-  display: none;
-} */
-.bar{
-  width: 60px;
-  height: 17px;
-  border: 2px solid #fff;
-  opacity: 30%;
-  margin: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: .6s;
+
+.generos {
+  display: inline;
 }
-.bar:hover{
-  background-color: #fff;
+
+.gen-list {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.container-maisVendidos {
+  align-items: center;
+  text-align: center;
+}
+
+.container-img-maisVendidos {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.container-promocao {
+  text-align: center;
+  display: block;
+}
+
+.backgound {
+  background-color: #FFCC01;
+  width: 100%;
+  height: 300px;
+}
+
+.container-postagens {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.post {
+  width: 30%;
+  margin: 25px;
+}
+
+.backgound2 {
+  display: flex;
+  height: 200px;
+
+}
+
+.backgound2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cadastro {
+  background-color: #acacac;
+  width: 100%;
+  height: 200px;
+
+}
+
+.txtcadastro {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 50%;
+
+
+}
+
+.text-cadastre {
+  font-size: x-large;
+  margin-top: 10px;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  text-align: center;
+  width: 50%;
+  margin-top: 10px;
+  position: relative;
+}
+
+.input-field input {
+  position: relative;
+  background: none;
   border: none;
+  outline: none;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
 }
+
+.input-field input::placeholder {
+  color: rgb(74, 74, 74);
+  font-size: medium;
+
+}
+
+.input-field .underline {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  background: black;
+  
+
+}
+
+form input[type="submit"] {
+  margin-top: 10px;
+  padding: 0.4rem;
+  cursor: pointer;
+  background: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  font-size: large;
+
+}
+
+form input[type="submit"]:hover {
+  background-color: #cdcbcb;
+
+}
+.strbold{
+  font-weight: bold;
+}
+
+/* **********************************************************************************************
+***********************************   MEDIA QUERIES   ******************************************* 
+********************************************************************************************** */
+
+/* Small Screens *****************************************************************************/
+
+@media only screen and (max-width: 640px) {}
+
+/* End of small Screens*/
+
+
+
+/* Medium Screens ****************************************************************************/
+
+@media only screen and (min-width: 641px) and (max-width: 1023px) {
+  .watch-slider .slide {
+    width: 33%;
+  }
+}
+
+/* End of Medium Screens*/
+
+
+
+
+/* Large Screens *****************************************************************************/
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+
+  .global-page-container {
+    width: 1024px;
+  }
+
+}
+
+/*   End of Large Screens*/
+
+
+
+/* Extra Large Screens ***********************************************************************/
+
+@media only screen and (min-width: 1441px) {
+
+  .global-page-container {
+    width: 1440px;
+  }
+
+}
+
+/* End of Extra Large Screens*/
