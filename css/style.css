@@ -33,7 +33,11 @@
 }
 
 .nav-options {
-  color: rgb(0, 0, 0);
+  color: black;
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
 }
 
 .nav:hover {
@@ -43,8 +47,13 @@
 
 /* CENTRALIZAR LOGO E NAO MOVIMENTAR Ao EXECUTAR ANIMAÇÃO DE PESQUISAR */
 .logo img {
-  width: 90%;
-  
+  width: 30%;
+  position: fixed;
+  width:auto;
+  height:90px;
+  left: 45%;
+  top:1px;
+
 }
 
 .pesquisa {
@@ -83,7 +92,7 @@
 
 .icon-lente img {
   width: 100%;
-  height: 30px;
+  height: 20px;
 
 }
 
@@ -107,7 +116,6 @@
 }
 
 .icon-icones/* :hover  */{
-  background-color: #FFCC01;
   display: flex;
   align-items: center;
   margin-right: 10px;
@@ -115,8 +123,8 @@
 }
 
 footer {
-  background-color: #f8f8f8;
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+  background-color:white;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 200px;
   display: flex;
@@ -125,8 +133,8 @@ footer {
 }
 
 .logofooter {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin: 80px;
 }
 
@@ -134,8 +142,6 @@ footer {
   width: 80%;
   height: 100px;
   display: flex;
-  
-  
   align-items: center;
 }
 
@@ -153,9 +159,14 @@ footer {
 }
 
 .destaque {
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-style: bold;
   list-style: none;
   font-size: larger;
   margin-bottom: 3px;
+  color: gray;
+  
 }
 
 .linkpag {
@@ -167,16 +178,22 @@ footer {
 }
 
 .redes-socias {
-  width: 200px;
   display: flex;
+  width: 200px;
   height: 40px;
   justify-content: center;
-  
   list-style: none;
+ 
 }
 
 .redes-socias li {
   margin-right: 20px;
+}
+
+.container-redes{
+  display: flex;
+  margin-left: 20%;
+ 
 }
 
 .copyright {
