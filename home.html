@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menina dos Sapatos</title>
+  <title>Menina dos Sapatos - Home</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/home.css">
-  <link rel="stylesheet" href="./css/carrossel.css">
+  <script src="./js/carrossel.js"></script>
+
   
 
 </head>
@@ -18,20 +19,20 @@
 
     <nav class="nav-bar">
       <ul class="nav-list">
-        <li class="nav feminino"><a class="nav-options" href="#">FEMININO</a></li>
+        <li class="nav feminino"><a class="nav-options" href="feminino.html">FEMININO</a></li>
         <li class="nav masculino"><a class="nav-options" href="#">MASCULINO</a></li>
         <li class="nav promocoes"><a class="nav-options" href="#">PROMOÇÕES</a></li>
       </ul>
     </nav>
 
     <div class="logo">
-      <img class="logo-princ" src="./imghome/MeninaDosSapatos.png" alt="logomarca">
+      <img class="logo-princ" src="./img/imghome/MeninaDosSapatos.png" alt="logomarca">
     </div>
     <div class="anim-lupa">
       <form class="pesquisa">
         <input class="input" type="text" name="search" placeholder="Pesquisar">
         <a class="icon-lente" href="#">
-          <img class="lente" src="./imghome/lente2.png" alt="lente" height="15" width="15">
+          <img class="lente" src="./img/imghome/lente2.png" alt="lente" height="15" width="15">
         </a>
       </form>
     </div>
@@ -39,15 +40,15 @@
 
     <div class="icon">
       <ul class="icones">
-        <li class="icon-icones"><a href="#"><img src="./imghome/iconeUser.png" alt="Icon User"></a></li>
-        <li class="icon-icones"><a href="#"><img src="./imghome/iconeFav.png" alt="Icon Favoritos"></a></li>
-        <li class="icon-icones"><a href="#"><img src="./imghome/iconeSacola.png" alt="Icon Sacola"></a></li>
+        <li class="icon-icones"><a href="perfil.html"><img src="./img/imghome/iconeUser.png" alt="Icon User"></a></li>
+        <li class="icon-icones"><a href="#"><img src="./img/imghome/iconeFav.png" alt="Icon Favoritos"></a></li>
+        <li class="icon-icones"><a href="sacola.html"><img src="./img/imghome/iconeSacola.png" alt="Icon Sacola"></a></li>
       </ul>
     </div>
 
   </header>
 
-  <main>
+  <main class="container-main">
 
     <!-- Faixa frete -->
     <!-- <div class="container-frete">
@@ -55,9 +56,9 @@
     </div> -->
 
     <!-- Banners promocionais rotativos -->
-    <div class="content">
+    <div class="conteiner-banner">
       <!-- imagens --> <div class="slide s1">
-        <img src="./imghome/banner1.png" alt="banner1">
+        <img src="./img/imghome/banner1.png" alt="banner1">
       </div>
       <!-- Labels -->
       <div class="navigation">
@@ -69,7 +70,7 @@
 
     <div class="generos">
       <ul class="gen-list">
-        <li class="nav feminino"><a class="nav-options" href="#">FEMININO</a></li>
+        <li class="nav feminino"><a class="nav-options" href="feminino.html">FEMININO</a></li>
         <li class="nav masculino"><a class="nav-options" href="#">MASCULINO</a></li>
       </ul>
     </div>
@@ -79,36 +80,37 @@
         <h1>MAIS VENDIDOS</h1>
       </div>
       <div class="ramodeflor">
-        <img src="./imghome/RAMO DE FLOR.png" alt="ramo de flor">
+        <img src="./img/imghome/RAMO DE FLOR.png" alt="ramo de flor">
       </div>
     </div>
 
     <section class="container-img-maisVendidos">
-      <div>
-        <a href="#"><img src="./imghome/IMG_4105.PNG" class="produto" alt="produto1"></a>
+      <div class="container-img">
+        <div>
+          <a href="#"><img src="./img/imghome/IMG_4105.PNG" class="produto" alt="produto1"></a>
+        </div>
+        <div>
+          <a href="#"><img src="./img/imghome/IMG_4106.PNG" class="produto" alt="produto2"></a>
+        </div>
+        <div>
+          <a href="#"><img src="./img/imghome/IMG_4107.PNG" class="produto" alt="produto3"></a>
+        </div>
+        <!-- <div>
+          <a href="#"><img src="./imghome/IMG_4108.PNG" class="produto" alt="produto4"></a>
+        </div> -->
+        <!-- <div>
+          <a href="#"><img src="./imghome/IMG_4109.PNG" class="produto" alt="produto5"></a>
+        </div> -->
+        <!-- <div>
+          <a href="#"><img src="./imghome/IMG_4110.PNG" class="produto" alt="produto6"></a>
+        </div> -->
+        <!-- <div>
+          <a href="#"><img src="./imghome/IMG_4111.PNG" class="produto" alt="produto7"></a>
+        </div> -->
+        <!-- <div>
+          <a href="#"><img src="./imghome/IMG_4112.PNG" class="produto" alt="produto8"></a>
+        </div> -->
       </div>
-      <div>
-        <a href="#"><img src="./imghome/IMG_4106.PNG" class="produto" alt="produto2"></a>
-      </div>
-      <div>
-        <a href="#"><img src="./imghome/IMG_4107.PNG" class="produto" alt="produto3"></a>
-      </div>
-      <!-- <div>
-        <a href="#"><img src="./imghome/IMG_4108.PNG" class="produto" alt="produto4"></a>
-      </div>
-      <div>
-        <a href="#"><img src="./imghome/IMG_4109.PNG" class="produto" alt="produto5"></a>
-      </div>
-      <div>
-        <a href="#"><img src="./imghome/IMG_4110.PNG" class="produto" alt="produto6"></a>
-      </div>
-      <div>
-        <a href="#"><img src="./imghome/IMG_4111.PNG" class="produto" alt="produto7"></a>
-      </div>
-      <div>
-        <a href="#"><img src="./imghome/IMG_4112.PNG" class="produto" alt="produto8"></a>
-      </div> -->
-
     </section>
 
     <div class="container-promocao">
@@ -116,32 +118,35 @@
         <h1>PROMOÇÃO</h1>
       </div>
       <div class="ramodeflor">
-        <img src="./imghome/RAMO DE FLOR.png" alt="ramo de flor">
+        <img src="./img/imghome/RAMO DE FLOR.png" alt="ramo de flor">
       </div>
     </div>
 
     <section class="container-img-maisVendidos">
-      <div>
-        <a href="#"><img src="./imghome/tenis azul marinho.jpg" class="produto" alt="Azul marinho"></a>
+      <div class="container-img">
+        <div>
+          <a href="#"><img src="./img/imghome/tenis azul marinho.jpg" class="produto-destaque" alt="Azul marinho"></a>
+        </div>
+        <div>
+          <a href="#"><img src="./img/imghome/tenis branco.jpg" class="produto" alt="Branco"></a>
+        </div>
+        <div>
+          <a href="#"><img src="./img/imghome/tenis preto.jpg" class="produto" alt="Preto"></a>
+        </div>
+        <!-- <div>
+          <a href="#"><img src="./imghome/tenis rosa.jpg" class="produto" alt="Rosa"></a>
+        </div> -->
+        <!-- <div>
+          <a href="#"><img src="./imghome/tenis verde militar.jpg" class="produto" alt="Verde militar"></a>
+        </div> -->
+        <!-- <div>
+          <a href="#"><img src="./imghome/tenis vinho.jpg" class="produto" alt="Vinho"></a>
+        </div> -->
+        <!-- <div>
+          <a href="#"><img src="./imghome/tradicional roxo.jpg" class="produto" alt="Tradicional roxo"></a>
+        </div> -->
       </div>
-      <div>
-        <a href="#"><img src="./imghome/tenis branco.jpg" class="produto" alt="Branco"></a>
-      </div>
-      <div>
-        <a href="#"><img src="./imghome/tenis preto.jpg" class="produto" alt="Preto"></a>
-      </div>
-     <!--  <div>
-        <a href="#"><img src="./imghome/tenis rosa.jpg" class="produto" alt="Rosa"></a>
-      </div>
-      <div>
-        <a href="#"><img src="./imghome/tenis verde militar.jpg" class="produto" alt="Verde militar"></a>
-      </div>
-      <div>
-        <a href="#"><img src="./imghome/tenis vinho.jpg" class="produto" alt="Vinho"></a>
-      </div>
-      <div>
-        <a href="#"><img src="./imghome/tradicional roxo.jpg" class="produto" alt="Tradicional roxo"></a>
-      </div> -->
+      
 
     </section>
 
@@ -154,7 +159,7 @@
         <h1>SIGA A GENTE</h1>
       </div>
       <div class="ramodeflor">
-        <img src="./imghome/RAMO DE FLOR.png" alt="ramo de flor">
+        <img src="./img/imghome/RAMO DE FLOR.png" alt="ramo de flor">
       </div>
     </div>
 
@@ -196,23 +201,23 @@
 
   <footer>
     <div class="logofooter">
-      <img src="./imghome/logofooter.png">
+      <img src="./img/imghome/logofooter.png">
     </div>
     <section class="links">
       <div class="container-info">
         <ul class="info-list">
           <li class="destaque">Informações</li>
-          <li class="linkpag"><a class="nav-options" href="#">Sobre nós</a></li>
-          <li class="linkpag"><a class="nav-options" href="#">Política de Privacidade</a></li>
-          <li class="linkpag"><a class="nav-options" href="#">Política de Frete</a></li>
-          <li class="linkpag"><a class="nav-options" href="#">Política de Trocas e Devoluções</a></li>
+          <li class="linkpag"><a class="nav-options" href="politicas.html">Sobre nós</a></li>
+          <li class="linkpag"><a class="nav-options" href="politicas.html">Política de Privacidade</a></li>
+          <li class="linkpag"><a class="nav-options" href="politicas.html">Política de Frete</a></li>
+          <li class="linkpag"><a class="nav-options" href="politicas.html">Política de Trocas e Devoluções</a></li>
         </ul>
       </div>
 
       <div class="container-atendimento">
         <ul class="atend-list">
           <li class="destaque">Atendimento</li>
-          <li class="linkpag"><a class="nav-options" href="#">Acompanhe seu pedido</a></li>
+          <li class="linkpag"><a class="nav-options" href="pedidos.html">Acompanhe seu pedido</a></li>
           <li class="linkpag"><a class="nav-options" href="#">Fale conosco</a></li>
           <li class="linkpag"><a class="nav-options" href="#">Dúvidas Frequentes</a></li>
           <li class="linkpag"><a class="nav-options" href="#">Trocas ou Devoluções</a></li>
@@ -220,21 +225,14 @@
       </div>
       <div class="container-redes">
         <ul class="redes-socias">
-          <li><a href="#"><img src="./imghome/facebook.png" alt="Icon Facebook"></a></li>
-          <li><a href="#"><img src="./imghome/instagram.png" alt="Icon Instagram"></a></li>
+          <li><a href="https://web.facebook.com/profile.php?id=100063440151298"><img src="./img/imghome/facebook.png" alt="Icon Facebook"></a></li>
+          <li><a href="https://www.instagram.com/menina_dos_sapatos/"><img src="./img/imghome/instagram.png" alt="Icon Instagram"></a></li>
         </ul>
     </section>
-
-    </section>
-
-
-
     <!-- <div class="copyright">
       <p>© 2020 Copyright - Todos os direitos reservados</p>
     </div> -->
   </footer>
-  <!-- <script async src="//cdn.iframe.ly/embed.js?api_key={API_KEY}"></script> -->
-  <script src="./js/carrossel.js"></script>
 </body>
 
 </html>

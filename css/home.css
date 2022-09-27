@@ -1,68 +1,81 @@
-.content {
+.container-main{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+
+/* Banner - carrossel */ 
+.conteiner-banner {
   height: 600px;
   max-width: 100%;
   border-end-end-radius: 10px;
   border-end-start-radius: 10px;
   overflow: hidden;
   margin-top: 50px;
+  
 }
 
+/* Tamanho do banner 1 */
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Tamanho do banner 2 */
 .slide1 img {
   width: 100%;
   height: 100%;
-
 }
 
-.slide img {
-  width: 100%;
-}
-
-.navigation {
-  position: absolute;
-  bottom: 20px;
-  left: 43%;
-  translate: translate(-50%);
-  display: flex;
-}
-
-.generos {
-  display: inline;
-}
-
+/* Link para paginas de genero especifico */
 .gen-list {
   display: flex;
   justify-content: space-evenly;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.img {
   width: 100%;
-  border-radius: 50px;
+  
 }
 
+/* Texto mais vendidos */
 .container-maisVendidos {
   align-items: center;
   text-align: center;
 }
 
+/* Div com Div de produtos dentro - carrossel */
 .container-img-maisVendidos {
-  max-width: 100%;
-  margin: 0 auto;
+  width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
+/* Div de produtos */
+.container-img {
+  width:80%;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;  
+}
+
+/* Tamanho das imagems */
+.container-img-maisVendidos img{
+  width: 300px;
+}
+
+/* Texto de Promoção */
 .container-promocao {
   text-align: center;
   display: block;
 }
 
+/* Backgound para incorporação de avaliações e comentarios */
 .backgound {
   background-color: #FFCC01;
   width: 100%;
   height: 300px;
 }
 
+/* Container de postagens em destaque */
 .container-postagens {
   max-width: 100%;
   margin: 0 auto;
@@ -70,22 +83,26 @@
   align-items: center;
 }
 
+/* Postagem em indivudual */
 .post {
   width: 30%;
   margin: 25px;
 }
 
+/* Backgound de cadastro para cupons */
 .backgound2 {
   display: flex;
   height: 200px;
 }
 
+/* Background pai */
 .backgound2 {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: center;  
 }
 
+/* Cor do background */
 .cadastro {
   background-color: #acacac;
   width: 100%;
@@ -111,8 +128,9 @@
   max-width: 400px;
   text-align: center;
   width: 50%;
-  margin-top: 10px;
+  margin-bottom: 20px;
   position: relative;
+
 }
 
 .input-field input {
