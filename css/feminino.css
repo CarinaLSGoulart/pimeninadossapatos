@@ -1,0 +1,53 @@
+h1 {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFCC01;
+    margin-top: 8%;
+
+}
+
+.paginaPrincipal {
+    display: inline-flex;
+}
+
+.menuLateral {
+    width: 800px;
+    align-items: left;
+    margin-left: 10px;
+}
+
+.produtos {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.produtos-femininos {
+    width: 400px;
+}
+
+.tituloFiltro {
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-style: bold;
+}
+
+.removerFiltros {
+    display: flex;
+    justify-items: center;
+    border-radius: 5px;
+    align-items: center;
+    border: 1px solid #525252;
+}
+
+.remove {
+    margin-left: 5%;
+}
+
+.lixo {
+    width: 20px;
+    height: 20px;
+    align-items: flex-end;
+    margin-left: 20px;
+}

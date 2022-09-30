@@ -1,4 +1,4 @@
-@import url("https://use.typekit.net/xcg0udj.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
   max-width: 100%;
@@ -9,11 +9,11 @@
   font-style: normal;
   text-decoration: none;
   box-sizing: border-box;
-  
+
 }
 
 #menu {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   padding: 10px 0;
   align-items: center;
@@ -47,6 +47,17 @@
 
 /* CENTRALIZAR LOGO E NAO MOVIMENTAR Ao EXECUTAR ANIMAÇÃO DE PESQUISAR */
 .logo img {
+  
+  width: 150px;
+  position: relative;
+  /* left: 100px; */
+
+}
+
+.anim-lupa {
+  width: 130px;
+  margin-left: 140px;
+  left: 80px;
   width: 30%;
   position: fixed;
   width:auto;
@@ -54,22 +65,25 @@
   left: 45%;
   top:1px;
 
+
 }
 
 .pesquisa {
+  display: flex;
   position: relative;
+  align-items: center;
+  margin-top: 20px;
   height: 40px;
   left: 120px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50px;
-  border: black solid 1px;
+  gap: 5px;
+
+  /* background-color: rgb(255, 255, 255); */
+  /* border-radius: 50px; */
+  /* border: black solid 1px; */
 }
 
 .input {
-  background: none;
+  /* background: none; */
   border: none;
   outline: none;
   width: 0;
@@ -78,7 +92,8 @@
 }
 
 .pesquisa:hover>.input {
-  width: 50%;
+  width: 60%;
+
 }
 
 .lente {
@@ -103,6 +118,7 @@
   margin: 10px 0;
   padding: 20px 20px;
   width: 300px;
+
 }
 
 .icones {
@@ -115,7 +131,12 @@
   /* transition: 0.6seg; */
 }
 
+
+
+
+
 .icon-icones/* :hover  */{
+
   display: flex;
   align-items: center;
   margin-right: 10px;
@@ -174,7 +195,7 @@ footer {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-right: 20px;
-  
+
 }
 
 .redes-socias {
@@ -234,5 +255,3 @@ footer {
   }
 
 }
-
-

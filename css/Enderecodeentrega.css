@@ -1,0 +1,16 @@
+.container {
+    margin-top: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+  }
+
+  .Minhaconta {
+    text-decoration: none;
+    list-style: none;
+  }  
+
+.link2 {
+    background-color: yellow;
+}
