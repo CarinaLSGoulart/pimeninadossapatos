@@ -1,220 +1,213 @@
-<HTML:5>
-    <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menina dos Sapatos</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    
+    <script src="https://kit.fontawesome.com/32cf0bc5ba.js" crossorigin="anonymous"></script>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Menina dos Sapatos</title>
-        <link rel="stylesheet" href="../MeninaDosSapatos/css/login.css">
-        <link rel="stylesheet" href="../MeninaDosSapatos/css/style.css">
-        <script src="https://kit.fontawesome.com/32cf0bc5ba.js" crossorigin="anonymous"></script>
-    </head>
-
+    
+    
+  <body>
     <!-- HEADER - MENU PRINCIPAL -->
 
     <header id="menu">
 
-        <nav class="nav-bar">
-          <ul class="nav-list">
-            <li class="nav feminino"><a class="nav-options" href="#">FEMININO</a></li>
-            <li class="nav masculino"><a class="nav-options" href="#">MASCULINO</a></li>
-            <li class="nav promocoes"><a class="nav-options" href="#">PROMOÇÕES</a></li>
-          </ul>
-        </nav>
-    
-        <div class="logo">
-          <img class="logo-princ" src="./imghome/MeninaDosSapatos.png" alt="logomarca">
-        </div>
-        <div>
-          <form class="pesquisa">
-            <input class="input" type="text" name="search" placeholder="Pesquisar">
-            <a class="icon-lente" href="#">
-              <img class="lente" src="./imghome/lente2.png" alt="lente" height="15" width="15">
-            </a>
+      <nav class="nav-bar">
+        <ul class="nav-list">
+          <li class="nav feminino"><a class="nav-options" href="feminino.html">FEMININO</a></li>
+          <li class="nav masculino"><a class="nav-options" href="#">MASCULINO</a></li>
+          <li class="nav promocoes"><a class="nav-options" href="#">PROMOÇÕES</a></li>
+        </ul>
+      </nav>
+
+      <div class="logo">
+        <img class="logo-princ" src="./img/imghome/MeninaDosSapatos.png" alt="logomarca">
+      </div>
+      <div class="anim-lupa">
+        <form class="pesquisa">
+          <input class="input" type="text" name="search" placeholder="Pesquisar">
+          <a class="icon-lente" href="#">
+            <img class="lente" src="./img/imghome/lente2.png" alt="lente" height="15" width="15">
+          </a>
+        </form>
+      </div>
+      
+
+      <div class="icon">
+        <ul class="icones">
+          <li class="icon-icones"><a href="perfil.html"><img src="./img/imghome/iconeUser.png" alt="Icon User"></a></li>
+          <li class="icon-icones"><a href="#"><img src="./img/imghome/iconeFav.png" alt="Icon Favoritos"></a></li>
+          <li class="icon-icones"><a href="sacola.html"><img src="./img/imghome/iconeSacola.png" alt="Icon Sacola"></a></li>
+        </ul>
+      </div>
+
+    </header>
+
+    <main>
+      <!-- Acesso Fácil -->
+
+      <div class="acesso">
+          <p class="acesse"> Acesso fácil</p>
+          <p>Conecte-se usando seu cadastro de outra plataforma</p>
+      </div>
+
+      <div class="imagensAcesso">
+          <img class="logoGoogle" src="./img/imgloguin/Google.png" alt="Logo Google">
+          <img class="logoFacebook" src="./img/imgloguin/Facebook.png" alt="Logo Facebook">
+          <img class="logoApple" src="./img/imgloguin/Apple.png" alt="Logo Google">
+      </div>
+
+      <!-- Formulário Tenho Cadastro -->
+
+      <div class="formularios">
+
+        <div class="tenhoCadastro">
+
+          <form action="Cadastro" method="post">
+
+            <fieldset>
+              <legend>TENHO CADASTRO</legend>
+
+              <div class="inputBox">
+                <label for="email">E-mail*</label>
+                <input type="email" id="email" name="email" class="inputUser" placeholder="E-mail"
+                required />
+              </div>
+
+
+              <div class="inputBox">
+                <label for="senha">Senha*</label>
+                <input type="password" id="password" name="password" class="inputUser" placeholder="Senha"
+                required />
+              </div>
+
+              <div class="conectado">
+                <label for="conectado">Mantenha-me conectado:</label>
+                <input type="checkbox" id="conectado1" name="conectado" />
+              </div>
+
+              <a href="url">Esqueci minha senha</a>
+
+              <div class="button">
+                <button type="submit">ENVIAR</button>
+              </div>
+            </fieldset>    
           </form>
         </div>
-            
-        <div class="icon">
-          <ul class="icones">
-            <li class="icon-icones"><a href="#"><img src="./imghome/iconeUser.png" alt="Icon User"></a></li>
-            <li class="icon-icones"><a href="#"><img src="./imghome/iconeFav.png" alt="Icon Favoritos"></a></li>
-            <li class="icon-icones"><a href="#"><img src="./imghome/iconeSacola.png" alt="Icon Sacola"></a></li>
-          </ul>
-        </div>
-    
-      </header>
-    
-    <body>
+          
+      
+      <br>
 
-        
+      <!-- Formulário Quero me Cadastrar -->
 
-        <!-- Acesso Fácil -->
+      <div class="queroMeCadastrar">
 
-        <div class="acesso">
-            <p class="acesse"> Acesso fácil</p>
-            <p>Conecte-se usando seu cadastro de outra plataforma</p>
-        </div>
+        <form action="novoCadastro" method="post">
 
-        <div class="imagensAcesso">
-            <img class="logoGoogle" src="../MeninaDosSapatos/imagens/Google.png" alt="Logo Google">
-            <img class="logoFacebook" src="../MeninaDosSapatos/imagens/Facebook.png" alt="Logo Facebook">
-            <img class="logoApple" src="../MeninaDosSapatos/imagens/Apple.png" alt="Logo Google">
-        </div>
+          <fieldset>
+            <legend> QUERO ME CADASTRAR </legend>
 
-        <!-- Formulário Tenho Cadastro -->
-
-        <div class="formularios">
-
-            <div class="tenhoCadastro">
-
-                <form action="Cadastro" method="post">
-
-                    <fieldset>
-                        <legend>TENHO CADASTRO</legend>
-
-                        <div class="inputBox">
-                            <label for="email">E-mail*</label>
-                            <input type="email" id="email" name="email" class="inputUser" placeholder="E-mail"
-                                required />
-                        </div>
-
-
-                        <div class="inputBox">
-                            <label for="senha">Senha*</label>
-                            <input type="password" id="password" name="password" class="inputUser" placeholder="Senha"
-                                required />
-                        </div>
-
-                        <div class="conectado">
-                            <label for="conectado">Mantenha-me conectado:</label>
-                            <input type="checkbox" id="conectado1" name="conectado" />
-                        </div>
-
-                        <a href="url">Esqueci minha senha</a>
-
-
-                        <div class="button">
-                            <button type="submit">ENVIAR</button>
-                        </div>
-                </form>
-                </fieldset>
-
+            <div class="inputBox">
+              <label for="email">E-mail*</label>
+              <input type="email" id="email" name="email" class="inputUser" placeholder="E-mail"
+              required />
             </div>
-            <br>
 
-        <!-- Formulário Quero me Cadastrar -->
-
-            <div class="queroMeCadastrar">
-
-
-
-                <form action="novoCadastro" method="post">
-
-                    <fieldset>
-                        <legend> QUERO ME CADASTRAR </legend>
-
-                        <div class="inputBox">
-                            <label for="email">E-mail*</label>
-                            <input type="email" id="email" name="email" class="inputUser" placeholder="E-mail"
-                                required />
-                        </div>
-
-                        <div class="inputBox">
-                            <label for="nome">Nome*</label>
-                            <input type="text" id="nome" name="nome" class="inputUser" placeholder="Nome" required />
-                        </div>
-
-                        <div class="inputBox">
-                            <label for="sobrenome">Sobrenome*</label>
-                            <input type="text" id="sobrenome" name="sobrenome" class="inputUser" placeholder="Sobrenome"
-                                required />
-                        </div>
-
-                        <div class="inputBox">
-                            <label for="senha">Senha:</label>
-                            <input type="password" id="password" name="password" class="inputUser" placeholder="Senha"
-                                required />
-                        </div>
-
-                        <div class="boxAviso">
-                            <img class="aviso" src="../MeninaDosSapatos/imagens/aviso.png" alt="aviso">
-                            <p class="textpaviso">Mínimo 6 dígitos</p>
-                            <img class="aviso" src="../MeninaDosSapatos/imagens/aviso.png" alt="aviso">
-                            <p class="textpaviso">Letras</p>
-                            <img class="aviso" src="../MeninaDosSapatos/imagens/aviso.png" alt="aviso">
-                            <p class="textpaviso">Números</p>
-                        </div>
-
-                        <div class="password">
-                            <label for="confirmacaoSenha">Confirmação de Senha:</label>
-                            <input type="password" id="confpassword" name="confpassword" class="inputUser"
-                                placeholder="Confirme a senha" required />
-                        </div>
-
-                        <div class="conectado">
-                            <label for="conectado">Mantenha-me conectado</label>
-                            <input type="checkbox" id="conectado" name="conectado" />
-                        </div>
-
-                        <div class="conectado">
-                            <label for="termos">Li e concordo com os Termos de uso</label>
-                            <input type="checkbox" id="termos" name="termos" />
-                        </div>
-
-
-                        <div class="button">
-                            <button type="submit">ME CADASTRAR</button>
-                        </div>
-                    </fieldset>
-                </form>
-
-
-
+            <div class="inputBox">
+              <label for="nome">Nome*</label>
+              <input type="text" id="nome" name="nome" class="inputUser" placeholder="Nome" required />
             </div>
+
+            <div class="inputBox">
+              <label for="sobrenome">Sobrenome*</label>
+              <input type="text" id="sobrenome" name="sobrenome" class="inputUser" placeholder="Sobrenome"
+              required />
+            </div>
+
+            <div class="inputBox">
+              <label for="senha">Senha:</label>
+              <input type="password" id="password" name="password" class="inputUser" placeholder="Senha"
+              required />
+            </div>
+
+            <div class="boxAviso">
+              <img class="aviso" src="./img/imgloguin/aviso.png" alt="aviso">
+              <p class="textpaviso">Mínimo 6 dígitos</p>
+              <img class="aviso" src="./img/imgloguin/aviso.png" alt="aviso">
+              <p class="textpaviso">Letras</p>
+              <img class="aviso" src="./img/imgloguin/aviso.png" alt="aviso">
+              <p class="textpaviso">Números</p>
+            </div>
+
+            <div class="password">
+              <label for="confirmacaoSenha">Confirmação de Senha:</label>
+              <input type="password" id="confpassword" name="confpassword" class="inputUser"
+              placeholder="Confirme a senha" required />
+            </div>
+
+            <div class="conectado">
+              <label for="conectado">Mantenha-me conectado</label>
+              <input type="checkbox" id="conectado" name="conectado" />
+            </div>
+
+            <div class="conectado">
+              <label for="termos">Li e concordo com os Termos de uso</label>
+              <input type="checkbox" id="termos" name="termos" />
+            </div>
+
+
+            <div class="button">
+              <button type="submit">ME CADASTRAR</button>
+            </div>
+          </fieldset>
+        </form>
+
+
+
         </div>
-
-
-    </body>
+      </div>
+    </div>
+    </main>
 
     <footer>
-        <div class="logofooter">
-          <img src="./imghome/logofooter.png">
+      <div class="logofooter">
+        <img src="./img/imghome/logofooter.png">
+      </div>
+      <section class="links">
+        <div class="container-info">
+          <ul class="info-list">
+            <li class="destaque">Informações</li>
+            <li class="linkpag"><a class="nav-options" href="politicas.html">Sobre nós</a></li>
+            <li class="linkpag"><a class="nav-options" href="politicas.html">Política de Privacidade</a></li>
+            <li class="linkpag"><a class="nav-options" href="politicas.html">Política de Frete</a></li>
+            <li class="linkpag"><a class="nav-options" href="politicas.html">Política de Trocas e Devoluções</a></li>
+          </ul>
         </div>
-        <section class="links">
-          <div class="container-info">
-            <ul class="info-list">
-              <li class="destaque">Informações</li>
-              <li class="linkpag"><a class="nav-options" href="#">Sobre nós</a></li>
-              <li class="linkpag"><a class="nav-options" href="#">Política de Privacidade</a></li>
-              <li class="linkpag"><a class="nav-options" href="#">Política de Frete</a></li>
-              <li class="linkpag"><a class="nav-options" href="#">Política de Trocas e Devoluções</a></li>
-            </ul>
-          </div>
-    
-          <div class="container-atendimento">
-            <ul class="atend-list">
-              <li class="destaque">Atendimento</li>
-              <li class="linkpag"><a class="nav-options" href="#">Acompanhe seu pedido</a></li>
-              <li class="linkpag"><a class="nav-options" href="#">Fale conosco</a></li>
-              <li class="linkpag"><a class="nav-options" href="#">Dúvidas Frequentes</a></li>
-              <li class="linkpag"><a class="nav-options" href="#">Trocas ou Devoluções</a></li>
-            </ul>
-          </div>
-          <div class="container-redes">
-            <ul class="redes-socias">
-              <li><a href="#"><img src="./imghome/facebook.png" alt="Icon Facebook"></a></li>
-              <li><a href="#"><img src="./imghome/instagram.png" alt="Icon Instagram"></a></li>
-            </ul>
-        </section>
-    
-        </section>
-    
-    
-    
-        <!-- <div class="copyright">
-          <p>© 2020 Copyright - Todos os direitos reservados</p>
-        </div> -->
-      </footer>
-
-</HTML:5>
+  
+        <div class="container-atendimento">
+          <ul class="atend-list">
+            <li class="destaque">Atendimento</li>
+            <li class="linkpag"><a class="nav-options" href="pedidos.html">Acompanhe seu pedido</a></li>
+            <li class="linkpag"><a class="nav-options" href="#">Fale conosco</a></li>
+            <li class="linkpag"><a class="nav-options" href="#">Dúvidas Frequentes</a></li>
+            <li class="linkpag"><a class="nav-options" href="#">Trocas ou Devoluções</a></li>
+          </ul>
+        </div>
+        <div class="container-redes">
+          <ul class="redes-socias">
+            <li><a href="https://web.facebook.com/profile.php?id=100063440151298"><img src="./img/imghome/facebook.png" alt="Icon Facebook"></a></li>
+            <li><a href="https://www.instagram.com/menina_dos_sapatos/"><img src="./img/imghome/instagram.png" alt="Icon Instagram"></a></li>
+          </ul>
+      </section>
+      <!-- <div class="copyright">
+        <p>© 2020 Copyright - Todos os direitos reservados</p>
+      </div> -->
+    </footer>
+  </body>
+</html>
