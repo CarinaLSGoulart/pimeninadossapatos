@@ -3,9 +3,15 @@ const app = express()
 const path = require('path')
 
 const routerHome = require('./routes/home')
+const routerfeminino = require('./routes/feminino')
 
 
-app.use('/', routerHome)
+
+
+
+app.use('/', routerHome);
+app.use('/', routerfeminino);
+
 
 
 app.set("view engine", "ejs") /* indicação do EJS */

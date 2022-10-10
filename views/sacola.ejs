@@ -1,297 +1,213 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">git 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/sacola.css">
-  
   <title>Menina dos Sapatos - Sacola</title>
 </head>
-
 <body>
-  <header id="menu">
-
-    <nav class="nav-bar">
-      <ul class="nav-list">
-        <li class="nav feminino"><a class="nav-options" href="feminino.html">FEMININO</a></li>
-        <li class="nav masculino"><a class="nav-options" href="#">MASCULINO</a></li>
-        <li class="nav promocoes"><a class="nav-options" href="#">PROMOÇÕES</a></li>
-      </ul>
-    </nav>
-  
-    <div class="logo">
-      <img class="logo-princ" src="./img/imghome/MeninaDosSapatos.png" alt="logomarca">
+<%- include("./partials/header") %>
+  <main>
+    <div class="sacola-titulo">
+        <h2 class="sac-titulo">Sacola de Compras</h2>  
     </div>
-    <div class="anim-lupa">
-      <form class="pesquisa">
-        <input class="input" type="text" name="search" placeholder="Pesquisar">
-        <a class="icon-lente" href="#">
-          <img class="lente" src="./img/imghome/lente2.png" alt="lente" height="15" width="15">
-        </a>
-      </form>
-    </div>
-      
-  
-      <div class="icon">
-        <ul class="icones">
-          <li class="icon-icones"><a href="perfil.html"><img src="./img/imghome/iconeUser.png" alt="Icon User"></a></li>
-          <li class="icon-icones"><a href="#"><img src="./img/imghome/iconeFav.png" alt="Icon Favoritos"></a></li>
-          <li class="icon-icones"><a href="sacola.html"><img src="./img/imghome/iconeSacola.png" alt="Icon Sacola"></a></li>
-        </ul>
+    <section id="sacola-container">
+      <div class="sacola-item1">
+        <p><h2>Itens</h2></p> <!--Numero de itens será modificado via JS???-->
+        <img class="sapato" src="./img/imgloguin/tenis branco.jpg" alt="tenis01">
+        <a href="#"><img class="lixeira1" src="./img/imgloguin/lixeira.png" alt="lixeira"></a>
+        <p class="titulo-tenis"> Tenis Branco</p>
+        <br>
+        <p> Tipo de Frete</p>
+        <input type="checkbox" name="embalagem" id="embalagem"><label for="embalagem"> Adicionar emabalagem para presente?</label> <br>
+        <p><select name="numeracao" id="numeracao">
+          <option selected disabled>Número</option>
+          <option value="33">33</option>
+          <option value="34">34</option>
+          <option value="35">35</option>
+          <option value="36">36</option>
+          <option value="37">37</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>
+        </select></p>
+        <p><select name="quantidade" id="quantidade">
+          <option selected disabled>Quantidade</option>
+          <option value="1">01</option>
+          <option value="2">02</option>
+          <option value="3">03</option>
+          <option value="4">04</option>
+          <option value="5">05</option>
+          <option value="6">06</option>
+          <option value="7">07</option>
+          <option value="8">08</option>
+          <option value="9">09</option>
+          <option value="10">10</option>
+        </select></p>
+        <p><select name="modelo" id="modelo">
+          <option selected disabled>Modelo</option>
+          <option value="STW">Sticky Tenis Woman (monocolor)</option>
+          <option value="STM">Sticky Tenis Man (monocolor)</option>
+          <option value="STW-F">Sticky Tenis Woman (Bicolor)</option>
+          <option value="STM-F">Sticky Tenis Man (Bicolor)</option>
+          <option value="SSW">Sticky Shoes Woman (Monocolor)</option>
+          <option value="SSM">Sticky Shoes Man (Monocolor)</option>
+          <option value="GSW">Gecko Sneackers Woman</option>
+          <option value="GSM">Gecko Sneackers Man</option>
+          <option value="GSV">Gecko Sneackers Ventila (Unissex)</option>
+          <option value="GSV-ESD">Gecko Sneackers Ventila (Unissex)</option>
+          <option value="GSW-ESD">Gecko Sneackers Impermeável Woman</option>
+          <option value="GSM-ESD">Gecko Sneackers Impermeável Man</option>
+          <option value="SOC-W">Social Woman</option>
+          <option value="SOC-M">Social Man</option>
+          <option value="SJW">Sticky Job Woman</option>
+          <option value="SJM">Sticky Job Man</option>
+          <option value="SWB">Sticky Bico Semirrígido Woman</option>
+          <option value="SMB">Sticky Bico Semirrígido Man</option>
+        </select></p>
+        <p><select name="cor" id="cor">
+          <option selected disabled>Cor</option>
+          <option value="BCA">Branca</option>
+          <option value="BCA/BCA">Branca/Branca</option>
+          <option value="BCA/CZA">Branca/Cinza</option>
+          <option value="PTA">Preta</option>
+          <option value="PTA/PTA">Preta/Preta</option>
+          <option value="PTA/BCA">Preta/Branca</option>
+          <option value="PTA/CZA">Preta/Cinza</option>
+          <option value="MRV">Marrom</option>
+          <option value="MRV/BCA">Marrom/Branca</option>
+          <option value="AZM">Azul Marinho</option>
+          <option value="AZM/BCA">Azul Marinho/Branca</option>
+          <option value="PIK">Pink</option>
+          <option value="VEDM">Verde Militar</option>
+          <option value="VEDM/BCA">Verde Militar/Branca</option>
+          <option value="CER">Cereja</option>
+          <option value="CER/BCA">Cereja/Branca</option>
+          <option value="LLA">Lilás</option>
+          <option value="VDHOS">Verde Hospitalar</option>
+          <option value="CZA">Cinza</option>
+          <option value="CZA/CZA">Cinza/Cinza</option>
+          <option value="VED">Verde</option>
+          <option value="CAF">Café</option>
+          <option value="AZBC">Azul Bic</option>
+          <option value="ROS">Rosa</option>
+          <option value="ROS/BCA">Rosa/Branca</option>
+          <option value="AMA">Amarela</option>
+          <option value="VER">Vermelha</option>
+          <option value="DOU">Dourada</option>
+          <option value="NUD">Nude</option>
+        </select></p>
+        <img class="sapato" src="./img/imgloguin/tenis branco.jpg" alt="tenis01">
+        <a href="#"><img class="lixeira1" src="./img/imgloguin/lixeira.png" alt="lixeira"></a>
+        <p class="titulo-tenis"> Tenis Branco</p>
+        <br>
+        <p> Tipo de Frete</p>
+        <input type="checkbox" name="embalagem" id="embalagem"><label for="embalagem"> Adicionar emabalagem para presente?</label> <br>
+        <p><select name="numeracao" id="numeracao">
+          <option selected disabled>Número</option>
+          <option value="33">33</option>
+          <option value="34">34</option>
+          <option value="35">35</option>
+          <option value="36">36</option>
+          <option value="37">37</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>
+        </select></p>
+        <p><select name="quantidade" id="quantidade">
+          <option selected disabled>Quantidade</option>
+          <option value="1">01</option>
+          <option value="2">02</option>
+          <option value="3">03</option>
+          <option value="4">04</option>
+          <option value="5">05</option>
+          <option value="6">06</option>
+          <option value="7">07</option>
+          <option value="8">08</option>
+          <option value="9">09</option>
+          <option value="10">10</option>
+        </select></p>
+        <p><select name="modelo" id="modelo">
+          <option selected disabled>Modelo</option>
+          <option value="STW">Sticky Tenis Woman (monocolor)</option>
+          <option value="STM">Sticky Tenis Man (monocolor)</option>
+          <option value="STW-F">Sticky Tenis Woman (Bicolor)</option>
+          <option value="STM-F">Sticky Tenis Man (Bicolor)</option>
+          <option value="SSW">Sticky Shoes Woman (Monocolor)</option>
+          <option value="SSM">Sticky Shoes Man (Monocolor)</option>
+          <option value="GSW">Gecko Sneackers Woman</option>
+          <option value="GSM">Gecko Sneackers Man</option>
+          <option value="GSV">Gecko Sneackers Ventila (Unissex)</option>
+          <option value="GSV-ESD">Gecko Sneackers Ventila (Unissex)</option>
+          <option value="GSW-ESD">Gecko Sneackers Impermeável Woman</option>
+          <option value="GSM-ESD">Gecko Sneackers Impermeável Man</option>
+          <option value="SOC-W">Social Woman</option>
+          <option value="SOC-M">Social Man</option>
+          <option value="SJW">Sticky Job Woman</option>
+          <option value="SJM">Sticky Job Man</option>
+          <option value="SWB">Sticky Bico Semirrígido Woman</option>
+          <option value="SMB">Sticky Bico Semirrígido Man</option>
+        </select></p>
+        <p><select name="cor" id="cor">
+          <option selected disabled>Cor</option>
+          <option value="BCA">Branca</option>
+          <option value="BCA/BCA">Branca/Branca</option>
+          <option value="BCA/CZA">Branca/Cinza</option>
+          <option value="PTA">Preta</option>
+          <option value="PTA/PTA">Preta/Preta</option>
+          <option value="PTA/BCA">Preta/Branca</option>
+          <option value="PTA/CZA">Preta/Cinza</option>
+          <option value="MRV">Marrom</option>
+          <option value="MRV/BCA">Marrom/Branca</option>
+          <option value="AZM">Azul Marinho</option>
+          <option value="AZM/BCA">Azul Marinho/Branca</option>
+          <option value="PIK">Pink</option>
+          <option value="VEDM">Verde Militar</option>
+          <option value="VEDM/BCA">Verde Militar/Branca</option>
+          <option value="CER">Cereja</option>
+          <option value="CER/BCA">Cereja/Branca</option>
+          <option value="LLA">Lilás</option>
+          <option value="VDHOS">Verde Hospitalar</option>
+          <option value="CZA">Cinza</option>
+          <option value="CZA/CZA">Cinza/Cinza</option>
+          <option value="VED">Verde</option>
+          <option value="CAF">Café</option>
+          <option value="AZBC">Azul Bic</option>
+          <option value="ROS">Rosa</option>
+          <option value="ROS/BCA">Rosa/Branca</option>
+          <option value="AMA">Amarela</option>
+          <option value="VER">Vermelha</option>
+          <option value="DOU">Dourada</option>
+          <option value="NUD">Nude</option>
+        </select></p>
       </div>
-  
-    </header>
-
-    <main>
-      <div class="sacola-titulo">
-          <h2 class="sac-titulo">Sacola de Compras</h2>  
+      <div class="resumo-compra">
+        <p><h2>Resumo da Compra</h2>
+        </p>
+        <p>Subtotal</p>
+        <p>R$</p>
+        <!--Input com valor individual dos itens selecionados, JavaScript-->
+        <p>TOTAL</p>
+        <p>R$</p>
+        <!--Input com soma dos valores dos itens selecionados, JavaScript-->
+        <p><button class="finalizar">FINALIZAR COMPRA</button></p>
+        <p><button class="continuar">Continuar Comprando</button></p>
       </div>
-      <section id="sacola-container">
-
-        <div class="sacola-item1">
-          <p><h2>Itens</h2></p> <!--Numero de itens será modificado via JS???-->
-          <img class="sapato" src="./img/imgloguin/tenis branco.jpg" alt="tenis01">
-          <a href="#"><img class="lixeira1" src="./img/imgloguin/lixeira.png" alt="lixeira"></a>
-          <p class="titulo-tenis"> Tenis Branco</p>
-          <br>
-          <p> Tipo de Frete</p>
-          <input type="checkbox" name="embalagem" id="embalagem"><label for="embalagem"> Adicionar emabalagem para presente?</label> <br>
-          <p><select name="numeracao" id="numeracao">
-            <option selected disabled>Número</option>
-            <option value="33">33</option>
-            <option value="34">34</option>
-            <option value="35">35</option>
-            <option value="36">36</option>
-            <option value="37">37</option>
-            <option value="38">38</option>
-            <option value="39">39</option>
-            <option value="40">40</option>
-            <option value="41">41</option>
-          </select></p>
-
-          <p><select name="quantidade" id="quantidade">
-            <option selected disabled>Quantidade</option>
-            <option value="1">01</option>
-            <option value="2">02</option>
-            <option value="3">03</option>
-            <option value="4">04</option>
-            <option value="5">05</option>
-            <option value="6">06</option>
-            <option value="7">07</option>
-            <option value="8">08</option>
-            <option value="9">09</option>
-            <option value="10">10</option>
-          </select></p>
-
-          <p><select name="modelo" id="modelo">
-            <option selected disabled>Modelo</option>
-            <option value="STW">Sticky Tenis Woman (monocolor)</option>
-            <option value="STM">Sticky Tenis Man (monocolor)</option>
-            <option value="STW-F">Sticky Tenis Woman (Bicolor)</option>
-            <option value="STM-F">Sticky Tenis Man (Bicolor)</option>
-            <option value="SSW">Sticky Shoes Woman (Monocolor)</option>
-            <option value="SSM">Sticky Shoes Man (Monocolor)</option>
-            <option value="GSW">Gecko Sneackers Woman</option>
-            <option value="GSM">Gecko Sneackers Man</option>
-            <option value="GSV">Gecko Sneackers Ventila (Unissex)</option>
-            <option value="GSV-ESD">Gecko Sneackers Ventila (Unissex)</option>
-            <option value="GSW-ESD">Gecko Sneackers Impermeável Woman</option>
-            <option value="GSM-ESD">Gecko Sneackers Impermeável Man</option>
-            <option value="SOC-W">Social Woman</option>
-            <option value="SOC-M">Social Man</option>
-            <option value="SJW">Sticky Job Woman</option>
-            <option value="SJM">Sticky Job Man</option>
-            <option value="SWB">Sticky Bico Semirrígido Woman</option>
-            <option value="SMB">Sticky Bico Semirrígido Man</option>
-          </select></p>
-
-          <p><select name="cor" id="cor">
-            <option selected disabled>Cor</option>
-            <option value="BCA">Branca</option>
-            <option value="BCA/BCA">Branca/Branca</option>
-            <option value="BCA/CZA">Branca/Cinza</option>
-            <option value="PTA">Preta</option>
-            <option value="PTA/PTA">Preta/Preta</option>
-            <option value="PTA/BCA">Preta/Branca</option>
-            <option value="PTA/CZA">Preta/Cinza</option>
-            <option value="MRV">Marrom</option>
-            <option value="MRV/BCA">Marrom/Branca</option>
-            <option value="AZM">Azul Marinho</option>
-            <option value="AZM/BCA">Azul Marinho/Branca</option>
-            <option value="PIK">Pink</option>
-            <option value="VEDM">Verde Militar</option>
-            <option value="VEDM/BCA">Verde Militar/Branca</option>
-            <option value="CER">Cereja</option>
-            <option value="CER/BCA">Cereja/Branca</option>
-            <option value="LLA">Lilás</option>
-            <option value="VDHOS">Verde Hospitalar</option>
-            <option value="CZA">Cinza</option>
-            <option value="CZA/CZA">Cinza/Cinza</option>
-            <option value="VED">Verde</option>
-            <option value="CAF">Café</option>
-            <option value="AZBC">Azul Bic</option>
-            <option value="ROS">Rosa</option>
-            <option value="ROS/BCA">Rosa/Branca</option>
-            <option value="AMA">Amarela</option>
-            <option value="VER">Vermelha</option>
-            <option value="DOU">Dourada</option>
-            <option value="NUD">Nude</option>
-          </select></p>
-
-          <img class="sapato" src="./img/imgloguin/tenis branco.jpg" alt="tenis01">
-          <a href="#"><img class="lixeira1" src="./img/imgloguin/lixeira.png" alt="lixeira"></a>
-          <p class="titulo-tenis"> Tenis Branco</p>
-          <br>
-          <p> Tipo de Frete</p>
-          <input type="checkbox" name="embalagem" id="embalagem"><label for="embalagem"> Adicionar emabalagem para presente?</label> <br>
-
-          <p><select name="numeracao" id="numeracao">
-            <option selected disabled>Número</option>
-            <option value="33">33</option>
-            <option value="34">34</option>
-            <option value="35">35</option>
-            <option value="36">36</option>
-            <option value="37">37</option>
-            <option value="38">38</option>
-            <option value="39">39</option>
-            <option value="40">40</option>
-            <option value="41">41</option>
-          </select></p>
-
-          <p><select name="quantidade" id="quantidade">
-            <option selected disabled>Quantidade</option>
-            <option value="1">01</option>
-            <option value="2">02</option>
-            <option value="3">03</option>
-            <option value="4">04</option>
-            <option value="5">05</option>
-            <option value="6">06</option>
-            <option value="7">07</option>
-            <option value="8">08</option>
-            <option value="9">09</option>
-            <option value="10">10</option>
-          </select></p>
-
-          <p><select name="modelo" id="modelo">
-            <option selected disabled>Modelo</option>
-            <option value="STW">Sticky Tenis Woman (monocolor)</option>
-            <option value="STM">Sticky Tenis Man (monocolor)</option>
-            <option value="STW-F">Sticky Tenis Woman (Bicolor)</option>
-            <option value="STM-F">Sticky Tenis Man (Bicolor)</option>
-            <option value="SSW">Sticky Shoes Woman (Monocolor)</option>
-            <option value="SSM">Sticky Shoes Man (Monocolor)</option>
-            <option value="GSW">Gecko Sneackers Woman</option>
-            <option value="GSM">Gecko Sneackers Man</option>
-            <option value="GSV">Gecko Sneackers Ventila (Unissex)</option>
-            <option value="GSV-ESD">Gecko Sneackers Ventila (Unissex)</option>
-            <option value="GSW-ESD">Gecko Sneackers Impermeável Woman</option>
-            <option value="GSM-ESD">Gecko Sneackers Impermeável Man</option>
-            <option value="SOC-W">Social Woman</option>
-            <option value="SOC-M">Social Man</option>
-            <option value="SJW">Sticky Job Woman</option>
-            <option value="SJM">Sticky Job Man</option>
-            <option value="SWB">Sticky Bico Semirrígido Woman</option>
-            <option value="SMB">Sticky Bico Semirrígido Man</option>
-          </select></p>
-
-          <p><select name="cor" id="cor">
-            <option selected disabled>Cor</option>
-            <option value="BCA">Branca</option>
-            <option value="BCA/BCA">Branca/Branca</option>
-            <option value="BCA/CZA">Branca/Cinza</option>
-            <option value="PTA">Preta</option>
-            <option value="PTA/PTA">Preta/Preta</option>
-            <option value="PTA/BCA">Preta/Branca</option>
-            <option value="PTA/CZA">Preta/Cinza</option>
-            <option value="MRV">Marrom</option>
-            <option value="MRV/BCA">Marrom/Branca</option>
-            <option value="AZM">Azul Marinho</option>
-            <option value="AZM/BCA">Azul Marinho/Branca</option>
-            <option value="PIK">Pink</option>
-            <option value="VEDM">Verde Militar</option>
-            <option value="VEDM/BCA">Verde Militar/Branca</option>
-            <option value="CER">Cereja</option>
-            <option value="CER/BCA">Cereja/Branca</option>
-            <option value="LLA">Lilás</option>
-            <option value="VDHOS">Verde Hospitalar</option>
-            <option value="CZA">Cinza</option>
-            <option value="CZA/CZA">Cinza/Cinza</option>
-            <option value="VED">Verde</option>
-            <option value="CAF">Café</option>
-            <option value="AZBC">Azul Bic</option>
-            <option value="ROS">Rosa</option>
-            <option value="ROS/BCA">Rosa/Branca</option>
-            <option value="AMA">Amarela</option>
-            <option value="VER">Vermelha</option>
-            <option value="DOU">Dourada</option>
-            <option value="NUD">Nude</option>
-          </select></p>
-
-        </div>
-        <div class="resumo-compra">
-            <p><h2>Resumo da Compra</h2>
-            </p>
-            <p>Subtotal</p>
-            <p>R$</p>
-            <!--Input com valor individual dos itens selecionados, JavaScript-->
-            <p>TOTAL</p>
-            <p>R$</p>
-            <!--Input com soma dos valores dos itens selecionados, JavaScript-->
-            <p><button class="finalizar">FINALIZAR COMPRA</button></p>
-            <p><button class="continuar">Continuar Comprando</button></p>
-        </div>
-        <div class="carrosel-container">
-            <h2> Recomendados para você</h2>
-            <a href="#"><img class="setas" src="./img/imgloguin/angulo-esquerdo.png" alt="setaE"></a>
-            <a href="#"><img class="tenis-carrossel" src="./img/imgloguin/tenis (4).jpg" alt="tenis1"></a>
-            <a href="#"><img class="tenis-carrossel" src="./img/imgloguin/tenis (2).jpg" alt="tenis2"></a>
-            <a href="#"><img class="tenis-carrossel" src="./img/imgloguin/tenis (3).jpg" alt="tenis3"></a>
-            <a href="#"><img class="setas" src="./img/imgloguin/angulo-direito.png" alt="setaD"></a>
-        </div>
-      </section>
-        
-
-    </main>
-
-    <footer>
-      <div class="logofooter">
-          <img src="./img/imghome/logofooter.png">
+      <div class="carrosel-container">
+        <h2> Recomendados para você</h2>
+        <a href="#"><img class="setas" src="./img/imgloguin/angulo-esquerdo.png" alt="setaE"></a>
+        <a href="#"><img class="tenis-carrossel" src="./img/imgloguin/tenis (4).jpg" alt="tenis1"></a>
+        <a href="#"><img class="tenis-carrossel" src="./img/imgloguin/tenis (2).jpg" alt="tenis2"></a>
+        <a href="#"><img class="tenis-carrossel" src="./img/imgloguin/tenis (3).jpg" alt="tenis3"></a>
+        <a href="#"><img class="setas" src="./img/imgloguin/angulo-direito.png" alt="setaD"></a>
       </div>
-      <section class="links">
-        <div class="container-info">
-          <ul class="info-list">
-            <li class="destaque">Informações</li>
-            <li class="linkpag"><a class="nav-options" href="politicas.html">Sobre nós</a></li>
-            <li class="linkpag"><a class="nav-options" href="politicas.html">Política de Privacidade</a></li>
-            <li class="linkpag"><a class="nav-options" href="politicas.html">Política de Frete</a></li>
-            <li class="linkpag"><a class="nav-options" href="politicas.html">Política de Trocas e Devoluções</a></li>
-          </ul>
-        </div>
-
-        <div class="container-atendimento">
-          <ul class="atend-list">
-            <li class="destaque">Atendimento</li>
-            <li class="linkpag"><a class="nav-options" href="#">Acompanhe seu pedido</a></li>
-            <li class="linkpag"><a class="nav-options" href="#">Fale conosco</a></li>
-            <li class="linkpag"><a class="nav-options" href="#">Dúvidas Frequentes</a></li>
-            <li class="linkpag"><a class="nav-options" href="#">Trocas ou Devoluções</a></li>
-          </ul>
-        </div>
-        <div class="container-redes">
-          <ul class="redes-socias">
-            <li><a href="https://web.facebook.com/profile.php?id=100063440151298"><img src="./img/imghome/facebook.png" alt="Icon Facebook"></a></li>
-            <li><a href="https://www.instagram.com/menina_dos_sapatos/"><img src="./img/imghome/instagram.png" alt="Icon Instagram"></a></li>
-          </ul>
-        </div>
-      </section>
-      <!-- <div class="copyright">
-      <p>© 2020 Copyright - Todos os direitos reservados</p>
-      </div> -->
-    </footer>
-
+    </section>
+  </main>
+<%- include("./partials/footer") %>
 </body>
-
 </html>

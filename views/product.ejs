@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,40 +7,9 @@
   <title>Menina dos Sapatos - Produtos</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/produtos.css">
-
 </head>
-
 <body>
-  <header id="menu">
-
-    <nav class="nav-bar">
-      <ul class="nav-list">
-        <li class="nav feminino"><a class="nav-options" href="feminino.html">FEMININO</a></li>
-        <li class="nav masculino"><a class="nav-options" href="#">MASCULINO</a></li>
-        <li class="nav promocoes"><a class="nav-options" href="#">PROMOÇÕES</a></li>
-      </ul>
-    </nav>
-
-    <div class="logo">
-      <img class="logo-princ" src="./img/imghome/MeninaDosSapatos.png" alt="logomarca">
-    </div>
-
-    <form class="pesquisa">
-      <input class="input" type="text" name="search" placeholder="Pesquisar">
-      <a class="icon-lente" href="#">
-        <img class="lente" src="./img/imghome/lente2.png" alt="lente" height="15" width="15">
-      </a>
-    </form>
-
-    <div class="icon">
-      <ul class="icones">
-        <li class="icon-icones"><a href="perfil.html"><img src="./img/imghome/iconeUser.png" alt="Icon User"></a></li>
-        <li class="icon-icones"><a href="#"><img src="./img/imghome/iconeFav.png" alt="Icon Favoritos"></a></li>
-        <li class="icon-icones"><a href="sacola.html"><img src="./img/imghome/iconeSacola.png" alt="Icon Sacola"></a></li>
-      </ul>
-    </div>
-
-  </header>
+  <%- include("./partials/header") %>
   <main>
     <section class="allcontainer">
       <div class="containe">
@@ -51,7 +19,6 @@
               <img src="./img/imgproduct/1/1.PNG">
             </div>
             <div class="thumbnails">
-
               <div class="thumbnail">
                 <img src="./img/imgproduct/1/e2d4f7f9-8a72-4b8a-9090-18e5de582896.png">
               </div>
@@ -61,7 +28,6 @@
               <div class="thumbnail">
                 <img src="./img/imgproduct/1/f38f95b1-4d74-4d7a-a085-532baa36883b.png">
               </div>
-
             </div>
           </div>
         </div>
@@ -93,13 +59,10 @@
                 </div>
               </div>
               <a href="" class="button"><img src="./img/imgproduct/icons/icon-cart.svg" class="cart">Adcionar ao carrinho</a>
-
             </div>
           </div>
-          
         </div>
       </div>
-
       <div class="container-maisVendidos">
         <div>
           <h1>FAVORITOS</h1>
@@ -108,7 +71,6 @@
           <img src="./img/imghome/RAMO DE FLOR.png" alt="ramo de flor">
         </div>
       </div>
-
       <section class="container-img-maisVendidos">
         <div>
           <a href="#"><img src="./img/imghome/IMG_4105.PNG" class="produto" alt="produto1"></a>
@@ -134,48 +96,10 @@
         <div>
           <a href="#"><img src="./imghome/IMG_4112.PNG" class="produto" alt="produto8"></a>
         </div> -->
-  
       </section>
     </section>
-
-
-
-
   </main>
-  <footer>
-    <div class="logofooter">
-      <img src="./img/imghome/logofooter.png">
-    </div>
-    <section class="links">
-      <div class="container-info">
-        <ul class="info-list">
-          <li class="destaque">Informações</li>
-          <li class="linkpag"><a class="nav-options" href="politicas.html">Sobre nós</a></li>
-          <li class="linkpag"><a class="nav-options" href="politicas.html">Política de Privacidade</a></li>
-          <li class="linkpag"><a class="nav-options" href="politicas.html">Política de Frete</a></li>
-          <li class="linkpag"><a class="nav-options" href="politicas.html">Política de Trocas e Devoluções</a></li>
-        </ul>
-      </div>
-
-      <div class="container-atendimento">
-        <ul class="atend-list">
-          <li class="destaque">Atendimento</li>
-          <li class="linkpag"><a class="nav-options" href="#">Acompanhe seu pedido</a></li>
-          <li class="linkpag"><a class="nav-options" href="#">Fale conosco</a></li>
-          <li class="linkpag"><a class="nav-options" href="#">Dúvidas Frequentes</a></li>
-          <li class="linkpag"><a class="nav-options" href="#">Trocas ou Devoluções</a></li>
-        </ul>
-      </div>
-      <div class="container-redes">
-        <ul class="redes-socias">
-          <li><a href="https://web.facebook.com/profile.php?id=100063440151298"><img src="./img/imghome/facebook.png" alt="Icon Facebook"></a></li>
-          <li><a href="https://www.instagram.com/menina_dos_sapatos/"><img src="./img/imghome/instagram.png" alt="Icon Instagram"></a></li>
-        </ul>
-    </section>
-    <!-- <div class="copyright">
-        <p>© 2020 Copyright - Todos os direitos reservados</p>
-        </div> -->
-  </footer>
+  <%- include("./partials/footer") %>
   <script src="./js/carrossel.js"></script>
 </body>
 

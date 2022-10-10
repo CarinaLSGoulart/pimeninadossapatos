@@ -1,52 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
   <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="./css/style.css">
       <link rel="stylesheet" href="./css/Enderecodeentrega.css">
-      
       <title>Menina dos Sapatos - Endereço de Entrega</title>    
   </head>
-
   <body>
-    <header id="menu">
-
-      <nav class="nav-bar">
-        <ul class="nav-list">
-          <li class="nav feminino"><a class="nav-options" href="feminino.html">FEMININO</a></li>
-          <li class="nav masculino"><a class="nav-options" href="#">MASCULINO</a></li>
-          <li class="nav promocoes"><a class="nav-options" href="#">PROMOÇÕES</a></li>
-        </ul>
-      </nav>
-
-      <div class="logo">
-        <img class="logo-princ" src="./img/imghome/MeninaDosSapatos.png" alt="logomarca">
-      </div>
-
-      <div class="anim-lupa">
-        <form class="pesquisa">
-          <input class="input" type="text" name="search" placeholder="Pesquisar">
-          <a class="icon-lente" href="#">
-            <img class="lente" src="./img/imghome/lente2.png" alt="lente" height="15" width="15">
-          </a>
-        </form>
-      </div>
-      
-
-      <div class="icon">
-        <ul class="icones">
-          <li class="icon-icones"><a href="perfil.html"><img src="./img/imghome/iconeUser.png" alt="Icon User"></a></li>
-          <li class="icon-icones"><a href="#"><img src="./img/imghome/iconeFav.png" alt="Icon Favoritos"></a></li>
-          <li class="icon-icones"><a href="sacola.html"><img src="./img/imghome/iconeSacola.png" alt="Icon Sacola"></a></li>
-        </ul>
-      </div>
-
-    </header>
-
-
+    <%- include("./partials/header") %>
     <main>       
       <div class="container">
         <h1>Minha Conta</h1> 
@@ -60,7 +23,6 @@
             <li class="menu1"><a class="link1" href="#">Lista de Desejos</a></li>
           </ul>
         </nav>
-
         <h2>Endereços de Entrega</h2>
         <nav id="submenu">
           <ul>
@@ -87,56 +49,13 @@
             <p> <label for="numero">Estado</label>
                 <input type="text" name="text" id="text" required>
           </ul>
-
         </nav>
-
         <nav>
           <h3 class="menu1"><a class="link1" href="#">Cadastrar</h3>
-
           <h3 class="menu1"><a class="link1" href="#">Cadastrar novo Endereço</h3>    
         </nav>
-
       </div>
-
     </main>
-
-
-    <footer>
-      <div class="logofooter">
-        <img src="./img/imghome/logofooter.png">
-      </div>
-      <section class="links">
-
-        <div class="container-info">
-          <ul class="info-list">
-            <li class="destaque">Informações</li>
-            <li class="linkpag"><a class="nav-options" href="politicas.html">Sobre nós</a></li>
-            <li class="linkpag"><a class="nav-options" href="politicas.html">Política de Privacidade</a></li>
-            <li class="linkpag"><a class="nav-options" href="politicas.html">Política de Frete</a></li>
-            <li class="linkpag"><a class="nav-options" href="politicas.html">Política de Trocas e Devoluções</a></li>
-          </ul>
-        </div>
-
-        <div class="container-atendimento">
-          <ul class="atend-list">
-            <li class="destaque">Atendimento</li>
-            <li class="linkpag"><a class="nav-options" href="#">Acompanhe seu pedido</a></li>
-            <li class="linkpag"><a class="nav-options" href="#">Fale conosco</a></li>
-            <li class="linkpag"><a class="nav-options" href="#">Dúvidas Frequentes</a></li>
-            <li class="linkpag"><a class="nav-options" href="#">Trocas ou Devoluções</a></li>
-          </ul>
-        </div>
-        <div class="container-redes">
-          <ul class="redes-socias">
-            <li><a href="https://web.facebook.com/profile.php?id=100063440151298"><img src="./img/imghome/facebook.png" alt="Icon Facebook"></a></li>
-            <li><a href="https://www.instagram.com/menina_dos_sapatos/"><img src="./img/imghome/instagram.png" alt="Icon Instagram"></a></li>
-          </ul>
-        </div>
-      </section>
-    <!-- <div class="copyright">
-    <p>© 2020 Copyright - Todos os direitos reservados</p>
-    </div> -->
-    </footer>
+<%- include("./partials/footer") %>
   </body>
-
 </html>
