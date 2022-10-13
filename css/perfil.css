@@ -1,26 +1,26 @@
-.container {
-  margin-top: 12%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  
-}
+.container, .main-container {
+    margin-top: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .link1 {
+    background-color: yellow;
+  }
+  .Minhaconta {
+    text-decoration: center;
+    list-style: none;
+    position: relative;
+    top: 0px;
+    
+    
+  }
+  .perfil {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+  }
+  h1{
+   margin-top: -80%;
 
-.link1 {
-  background-color: yellow;
-  
-}
-
-
-
-.Minhaconta {
-  text-decoration: none;
-  list-style: none;
-}
-
-.perfil {
-  text-decoration: none;
-  list-style: none;
-  
-}
-
+  }

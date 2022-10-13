@@ -7,10 +7,37 @@
   }
 
   .Minhaconta {
-    text-decoration: none;
+    text-decoration: center;
     list-style: none;
-  }  
+    position: relative;
+    top: 70px;
+    left:-270px;
+    }
+  
 
 .link2 {
     background-color: yellow;
 }
+
+h2{
+  margin-top: -18%;
+  margin-left: 50%;
+ 
+}
+
+.menu2{
+  margin-top:500%;
+  margin-left: -270%;
+}
+
+.menu3{
+  margin-left: -270%;
+}
+
+.menu4{
+  margin-top: -45%;
+  margin-left: -110%;
+
+}
+
+
