@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./css/Enderecodeentrega.css">
+      <title>Menina dos Sapatos - Endereço de Entrega</title>    
+  </head>
+  <body>
+    <%- include("./partials/header") %>
+    <main>       
+      <div class="container">
+        <h1>Minha Conta</h1> 
+        <nav id="submenu">
+          <ul class="Minhaconta">
+            <li class="menu1"><a class="link1" href="#">Meu Perfil</a></li>
+            <li class="menu1"><a class="link2" href="#">Endereço de Entrega</a></li>
+            <li class="menu1"><a class="link1" href="#">Dados de Pagamento</a></li>
+            <li class="menu1"><a class="link1" href="#">Histórico de Pedidos</a></li>
+            <li class="menu1"><a class="link1" href="#">Trocas e Devoluções</a></li>
+            <li class="menu1"><a class="link1" href="#">Lista de Desejos</a></li>
+          </ul>
+        </nav>
+        <h2>Endereços de Entrega</h2>
+        <nav id="submenu">
+          <ul>
+            <p> <label for="numero">Destinatário</label>
+                <input type="text" name="text" id="text" required>
+            <p> <label for="numero">Telefone</label>
+                <input type="text" name="numero" id="numero" required>
+            <p> <label for="numero">Identificação de Endereço</label>
+                <input type="text" name="text" id="text" required>
+            <p> <label for="numero">CEP</label>
+                <input type="text" name="numero" id="numero" required>
+            <p> <label for="numero">Endereço</label>
+                <input type="text" name="text" id="text" required>
+            <p> <label for="numero">Número</label>
+                <input type="text" name="numero" id="numero" required>  
+            <p> <label for="numero">Bairro</label>
+                <input type="text" name="text" id="text" required>
+            <p> <label for="numero">Complemento</label>
+                <input type="text" name="text" id="text" required>      
+            <p> <label for="numero">Ponto de Referência</label>
+                <input type="text" name="text" id="text" required>
+            <p> <label for="numero">Cidade</label>
+                <input type="text" name="text" id="text" required>
+            <p> <label for="numero">Estado</label>
+                <input type="text" name="text" id="text" required>
+          </ul>
+        </nav>
+        <nav>
+          <h3 class="menu1"><a class="link1" href="#">Cadastrar</h3>
+          <h3 class="menu1"><a class="link1" href="#">Cadastrar novo Endereço</h3>    
+        </nav>
+      </div>
+    </main>
+<%- include("./partials/footer") %>
+  </body>
+</html>
