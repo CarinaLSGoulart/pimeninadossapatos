@@ -18,7 +18,7 @@ const routerPoliticas = require('./routes/politicas');
 const routerProduct = require('./routes/product');
 const routerSacola = require('./routes/sacola');
 
-/* Log */
+/* Log - antes das rotas (app.use)*/
 let logmiddleware = require('./middlewares/logSite')
 app.use(logmiddleware)
 
