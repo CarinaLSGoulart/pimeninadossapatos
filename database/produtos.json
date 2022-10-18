@@ -1,0 +1,45 @@
+{
+"produtos":[
+{
+    "id": "1",
+    "modelo": "Social Sticky Shoes",
+    "price": 100,
+    "cor": "Branco",
+    "tamanho": "34",
+    "descrição": "",
+    "caracteristicas": "",
+    "qnt": "10"
+},
+{
+    "id": "2",
+    "modelo": "Tradicional Sticky Shoes",
+    "price": 100,
+    "cor": "branco",
+    "tamanho": "34",
+    "descrição": "",
+    "caracteristicas": "",
+    "qnt": "10"
+},
+{
+    "id": "3",
+    "modelo": "Gecko Sticky Shoes",
+    "price": 100,
+    "cor": "Branco",
+    "tamanho": "34",
+    "descrição": "",
+    "caracteristicas": "",
+    "qnt": "10"
+},
+{
+    "id": "4",
+    "modelo": "Tenis Sticky Shoes",
+    "price": 100,
+    "cor": "branco",
+    "tamanho": "34",
+    "descrição": "",
+    "caracteristicas": "",
+    "qnt": "10"
+}
+]}
+
+

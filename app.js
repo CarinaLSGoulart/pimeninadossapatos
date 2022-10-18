@@ -7,28 +7,31 @@ app.use(express.json());
 
 
 /* =========== Routes =========== */
-const routerHome = require('./routes/home.js');
-const routerDadosDePagamentos = require('./routes/dadosDePagamento.js');
-const routerenderecoDeEntrega = require('./routes/enderecoDeEntrega.js');
-const routerFeminino = require('./routes/feminino.js');
-const routerLogin = require('./routes/login.js');
-const routerPedido = require('./routes/pedido.js');
-const routerPerfil = require('./routes/perfil.js');
-const routerPoliticas = require('./routes/politicas.js');
-const routerProduct = require('./routes/product.js');
-const routerSacola = require('./routes/sacola.js');
+const routerHome = require('./routes/home');
+const dadosDePagamento = require('./routes/dadosDePagamento');
+const routerenderecoDeEntrega = require('./routes/enderecoDeEntrega');
+const routerFeminino = require('./routes/feminino');
+const routerLogin = require('./routes/login');
+const routerPedido = require('./routes/pedido');
+const routerPerfil = require('./routes/perfil');
+const routerPoliticas = require('./routes/politicas');
+const routerProduct = require('./routes/product');
+const routerSacola = require('./routes/sacola');
 
+/* Log */
+let logmiddleware = require('./middlewares/logSite')
+app.use(logmiddleware)
 
 app.use('/', routerHome);
-app.use('/', routerDadosDePagamentos);
-app.use('/', routerenderecoDeEntrega);
-app.use('/', routerFeminino);
-app.use('/', routerLogin);
-app.use('/', routerPedido);
-app.use('/', routerPerfil);
-app.use('/', routerPoliticas);
-app.use('/', routerProduct);
-app.use('/', routerSacola);
+app.use('/dadosDePagamento', dadosDePagamento);
+app.use('/enderecoDeEntrega', routerenderecoDeEntrega);
+app.use('/Feminino', routerFeminino);
+app.use('/Login', routerLogin);
+app.use('/Pedido', routerPedido);
+app.use('/Perfil', routerPerfil);
+app.use('/Politicas', routerPoliticas);
+app.use('/Product', routerProduct);
+app.use('/Sacola', routerSacola);
 
 /* ===== EJS ===== */
 app.set("view engine", "ejs") 
