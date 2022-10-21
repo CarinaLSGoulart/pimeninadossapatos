@@ -7,77 +7,310 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/feminino.css">
+
+
   <title>Menina dos Sapatos - Produtos Femininos</title>
 </head>
 <body>
 <%- include("./partials/header") %>
   <main>
-    <!-- TÍTULO PRINCIPAL -->
-    <div class="tituloPrincipal">
-        <h1> FEMININO </h1>
-    </div>
-    <!-- PÁGINA PRINCIPAL -->
-    <div class="paginaPrincipal">
-      <div class="menuLateral">
-      <p class="tituloFiltro"> FILTROS </p>
-      <div class="removerFiltros">
-        <p class="remove"> Remover Filtros</p>
-        <img class="lixo" src="./img/imgFeminino/lixeira.png" alt="remover-filtros">
-      </div>
-      <div class="busca">
-        <p class="busque"> Busque por preço </p>
-    </div>
+   <!-- TÍTULO PRINCIPAL -->
+
+   <div class="tituloPrincipal">
+    <h1> FEMININO </h1>
+</div>
+
+
+<!-- PÁGINA PRINCIPAL -->
+
+<div class="paginaPrincipal">
+
+<div class="menuLateral">
+
+  <p class="tituloFiltro"> FILTROS </p>
+  <div class="removerFiltros">
+    <p class="remove"> Remover Filtros</p>
+    <img class="lixo" src="./img/imgFeminino/lixeira.png" alt="remover-filtros">
   </div>
-    <div class="produtos">
-      <div class="produto1">
-        <a href="/product"><img class="produtos-femininos"
-          src="./img/imgproduct/03a6d618-afd4-44cd-999f-65cca4398c09.jpg" alt="tenis1"></a>
-        <p class="preco">100,00</p>
+
+  <!-- MODELOS -->
+  <div class="modelo">
+    <p class="opcoesModelo"> Modelo </p>
+   
+      <div class="social">        
+      <input type="checkbox" id="social" name="social" />
+      <label for="social">Social</label>
       </div>
-      <div class="produto2">
-        <a href="/product"><img class="produtos-femininos"
-          src="./img/imgproduct/042408e1-9058-4e26-a075-862374f19fea.jpg" alt="tenis2"></a>
-        <p class="preco">100,00</p>
-      </div>
-      <div class="produto3">
-        <a href="/product"><img class="produtos-femininos"
-          src="./img/imgproduct/04a4dfd4-e4ab-4f9c-8f60-e956cb070c03.jpg" alt="tenis3"></a>
-        <p class="preco">100,00</p>
-      </div>
-      <div class="produto4">
-        <a href="/product"><img class="produtos-femininos"
-          src="./img/imgproduct/03a6d618-afd4-44cd-999f-65cca4398c09.jpg" alt="tenis1"></a>
-        <p class="preco">100,00</p>
-      </div>
-      <div class="produto5">
-        <a href="/product"><img class="produtos-femininos"
-          src="./img/imgproduct/042408e1-9058-4e26-a075-862374f19fea.jpg" alt="tenis2"></a>
-        <p class="preco">100,00</p>
-      </div>
-      <div class="produto6">
-        <a href="/product"><img class="produtos-femininos"
-          src="./img/imgproduct/04a4dfd4-e4ab-4f9c-8f60-e956cb070c03.jpg" alt="tenis3"></a>
-        <p class="preco">100,00</p>
-      </div>
-      <div class="produto7">
-        <a href="/product"><img class="produtos-femininos"
-          src="./img/imgproduct/03a6d618-afd4-44cd-999f-65cca4398c09.jpg" alt="tenis1"></a>
-        <p class="preco">100,00</p>
-      </div>
-      <div class="produto8">
-        <a href="/product"><img class="produtos-femininos"
-          src="./img/imgproduct/042408e1-9058-4e26-a075-862374f19fea.jpg" alt="tenis2"></a>
-        <p class="preco">100,00</p>
-      </div>
-      <div class="produto9">
-        <a href="/product"><img class="produtos-femininos"
-          src="./img/imgproduct/04a4dfd4-e4ab-4f9c-8f60-e956cb070c03.jpg" alt="tenis3"></a>
-        <p class="preco">100,00</p>
-      </div>
+
+      <div class="tradicional"> 
+      <input type="checkbox" id="tradicional" name="tradicional" />
+      <label for="tradicional">Tradicional</label>  
     </div>
-  </div>    
-  </main>
+
+      <div class="tenis"> 
+      <input type="checkbox" id="tenis" name="tenis" />
+      <label for="tenis">Tênis</label>
+      </div>
+
+      <div class="gecko"> 
+      <input type="checkbox" id="gecko" name="gecko" />
+      <label for="gecko">Gecko</label>
+      </div>
+   
+  </div>
+    
+  <!-- TAMANHOS -->
+  <div class="tamanhoSapatos">
+    <p class="tamanho1"> Tamanho </p>
+
+    <div class="num">        
+      <input type="checkbox" id="33" name="33" />
+      <label for="num">33</label>
+      </div>
+
+    <div class="num">        
+      <input type="checkbox" id="34" name="34" />
+      <label for="num">34</label>
+      </div>
+
+    <div class="num">        
+      <input type="checkbox" id="35" name="35" />
+      <label for="num">35</label>
+      </div>
+     
+    <div class="num">        
+      <input type="checkbox" id="36" name="36" />
+      <label for="num">36</label>
+      </div>
+
+      
+    <div class="num">        
+      <input type="checkbox" id="37" name="37" />
+      <label for="num">37</label>
+      </div>
+
+      
+    <div class="num">        
+      <input type="checkbox" id="38" name="38" />
+      <label for="num">38</label>
+      </div>
+
+      
+    <div class="num">        
+      <input type="checkbox" id="39" name="39" />
+      <label for="num">39</label>
+      </div>
+
+      
+    <div class="num">        
+      <input type="checkbox" id="40" name="40" />
+      <label for="num">40</label>
+      </div>
+
+
+      <div class="num">        
+        <input type="checkbox" id="41" name="41" />
+        <label for="num">41</label>
+        </div>
+
+        
+    <div class="num">        
+      <input type="checkbox" id="42" name="42" />
+      <label for="num">42</label>
+      </div>
+
+    </div>
+
+  <!-- CORES -->
+
+  <div class="boxCores">
+
+  <p class="opcoesCores"> Cores </p>
+   
+  <div class="cores">
+
+    <div class="vermelho">
+    <img class="vermelho" src="./img/imgFeminino/vermelho.png" alt="vermelho">
+    <p> Vermelho </p>
+    </div>
+
+    <div class="rosa">
+    <img class="rosa" src="./img/imgFeminino/rosa.png" alt="rosa">
+    <p> Rosa </p>
+    </div>
+
+    <div class="roxo">
+    <img class="roxo" src="./img/imgFeminino/roxo.png" alt="roxo">
+    <p> Roxo </p>
+    </div>
+
+    <div class="laranja">
+    <img class="laranja" src="./img/imgFeminino/laranja.png" alt="laranja">
+    <p> Laranja </p>
+    </div>
+
+    <div class="vermelho">
+    <img class="vermelho" src="./img/imgFeminino/amarelo.png" alt="amarelo">
+    <p> Amarelo </p>
+    </div>
+
+    <div class="azul">
+    <img class="azul" src="./img/imgFeminino/azul.png" alt="azul">
+    <p> Azul </p>
+    </div>
+
+    <div class="verde">
+    <img class="verde" src="./img/imgFeminino/verde.png" alt="verde">
+    <p> Verde </p>
+    </div>
+
+    <div class="marrom">
+    <img class="marrom" src="./img/imgFeminino/marrom.png" alt="marrom">
+    <p> Marrom </p>
+    </div>
+
+    <div class="cinza" >
+    <img class="cinza" src="./img/imgFeminino/cinza.png" alt="cinza">
+    <p> Cinza </p>
+    </div>
+
+    <div class="branco">
+    <img class="branco" src="./img/imgFeminino/branco.png" alt="branco">
+    <p> Branco </p>
+    </div>
+
+    <div class="preto" >
+    <img class="preto" src="./img/imgFeminino/preto.png" alt="preto">
+    <p> Preto </p>
+    </div>
+
+
+  </div> 
+</div>     
+    
+  
+    <!-- RANGE PRECO -->
+      <div class="buscaValor">
+       <p class="busque">Busque por preço (R$)</p>
+      
+       
+        <div class="range">
+        
+          
+        <input id="percent" type="range" oninput="mostrarValor(this.value)"
+        min="50" max="400" value="400"/>
+        <span id="value">400</span> 
+        <p class="maximo">Insira o valor máximo</p>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+</div>            
+
+
+<div class="produtos">
+
+  <div class="produto1">
+    <a href="#"><img class="produtos-femininos"
+      src="./img/imgproduct/03a6d618-afd4-44cd-999f-65cca4398c09.jpg" alt="tenis1"></a>
+    <p class="preco">R$ 100,00</p>
+  </div>
+
+  <div class="produto2">
+    <a href="#"><img class="produtos-femininos"
+      src="./img/imgproduct/042408e1-9058-4e26-a075-862374f19fea.jpg" alt="tenis2"></a>
+    <p class="preco">R$ 100,00</p>
+  </div>
+
+  <div class="produto3">
+    <a href="#"><img class="produtos-femininos"
+      src="./img/imgproduct/04a4dfd4-e4ab-4f9c-8f60-e956cb070c03.jpg" alt="tenis3"></a>
+    <p class="preco">R$ 100,00</p>
+  </div>
+
+  <div class="produto4">
+    <a href="#"><img class="produtos-femininos"
+      src="./img/imgproduct/03a6d618-afd4-44cd-999f-65cca4398c09.jpg" alt="tenis1"></a>
+    <p class="preco">R$ 100,00</p>
+  </div>
+
+  <div class="produto5">
+    <a href="#"><img class="produtos-femininos"
+      src="./img/imgproduct/042408e1-9058-4e26-a075-862374f19fea.jpg" alt="tenis2"></a>
+    <p class="preco">R$ 100,00</p>
+  </div>
+
+  <div class="produto6">
+    <a href="#"><img class="produtos-femininos"
+      src="./img/imgproduct/04a4dfd4-e4ab-4f9c-8f60-e956cb070c03.jpg" alt="tenis3"></a>
+    <p class="preco">R$ 100,00</p>
+  </div>
+
+  <div class="produto7">
+    <a href="#"><img class="produtos-femininos"
+      src="./img/imgproduct/03a6d618-afd4-44cd-999f-65cca4398c09.jpg" alt="tenis1"></a>
+    <p class="preco">R$ 100,00</p>
+  </div>
+
+  <div class="produto8">
+    <a href="#"><img class="produtos-femininos"
+      src="./img/imgproduct/042408e1-9058-4e26-a075-862374f19fea.jpg" alt="tenis2"></a>
+    <p class="preco">R$ 100,00</p>
+  </div>
+
+  <div class="produto9">
+    <a href="#"><img class="produtos-femininos"
+      src="./img/imgproduct/04a4dfd4-e4ab-4f9c-8f60-e956cb070c03.jpg" alt="tenis3"></a>
+    <p class="preco">R$ 100,00</p>
+  </div>
+
+  <div class="produto5">
+    <a href="#"><img class="produtos-femininos"
+      src="./img/imgproduct/042408e1-9058-4e26-a075-862374f19fea.jpg" alt="tenis2"></a>
+    <p class="preco">R$ 100,00</p>
+  </div>
+
+  <div class="produto6">
+    <a href="#"><img class="produtos-femininos"
+      src="./img/imgproduct/04a4dfd4-e4ab-4f9c-8f60-e956cb070c03.jpg" alt="tenis3"></a>
+    <p class="preco">R$ 100,00</p>
+  </div>
+
+  <div class="produto7">
+    <a href="#"><img class="produtos-femininos"
+      src="./img/imgproduct/03a6d618-afd4-44cd-999f-65cca4398c09.jpg" alt="tenis1"></a>
+    <p class="preco">R$ 100,00</p>
+  </div>
+
+  <div class="produto8">
+    <a href="#"><img class="produtos-femininos"
+      src="./img/imgproduct/042408e1-9058-4e26-a075-862374f19fea.jpg" alt="tenis2"></a>
+    <p class="preco">R$ 100,00</p>
+  </div>
+
+  <div class="produto9">
+    <a href="#"><img class="produtos-femininos"
+      src="./img/imgproduct/04a4dfd4-e4ab-4f9c-8f60-e956cb070c03.jpg" alt="tenis3"></a>
+    <p class="preco">R$ 100,00</p>
+  </div>
+
+  <div class="produto5">
+    <a href="#"><img class="produtos-femininos"
+      src="./img/imgproduct/042408e1-9058-4e26-a075-862374f19fea.jpg" alt="tenis2"></a>
+    <p class="preco">R$ 100,00</p>
+  </div>
+
+</div>
+
+</div>
+
+
+
+</main>
 </body>
 <!-- FOOTER  -->
 <%- include("./partials/footer") %>
+
 </html>
