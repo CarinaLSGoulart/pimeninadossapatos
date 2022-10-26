@@ -1,45 +1,213 @@
-{
-"produtos":[
-{
-    "id": "1",
-    "modelo": "Social Sticky Shoes",
-    "price": 100,
-    "cor": "Branco",
-    "tamanho": "34",
-    "descrição": "",
-    "caracteristicas": "",
-    "qnt": "10"
-},
-{
-    "id": "2",
-    "modelo": "Tradicional Sticky Shoes",
-    "price": 100,
-    "cor": "branco",
-    "tamanho": "34",
-    "descrição": "",
-    "caracteristicas": "",
-    "qnt": "10"
-},
-{
-    "id": "3",
-    "modelo": "Gecko Sticky Shoes",
-    "price": 100,
-    "cor": "Branco",
-    "tamanho": "34",
-    "descrição": "",
-    "caracteristicas": "",
-    "qnt": "10"
-},
-{
-    "id": "4",
-    "modelo": "Tenis Sticky Shoes",
-    "price": 100,
-    "cor": "branco",
-    "tamanho": "34",
-    "descrição": "",
-    "caracteristicas": "",
-    "qnt": "10"
-}
-]}
+[
+	{
+		"id": "0",
+		"modelo": "social",
+		"image": "public/img/imgproduct/1/1.PNG",
+		"cor": "branco",
+		"tamanho": "34",
+		"descrição": "",
+		"category": "promocao",
+		"price": 100,
+		"genero": "M",
+		"qnt": "10"
+	},
+	{
+		"id": "3",
+		"modelo": "Gecko",
+		"image": "public/img/imgproduct/4/1.jpg",
+		"cor": "branco",
+		"tamanho": "34",
+		"descrição": "",
+		"category": "promocao",
+		"price": 100,
+		"genero": "M",
+		"qnt": "10"
+	},
+	{
+		"id": "3",
+		"modelo": "Gecko",
+		"image": "public/img/imgproduct/4/1.jpg",
+		"cor": "branco",
+		"tamanho": "34",
+		"descrição": "",
+		"category": "promocao",
+		"price": 100,
+		"genero": "M",
+		"qnt": "10"
+	},
+	{
+		"id": "1",
+		"modelo": "tradicional",
+		"image": "public/img/imgproduct/2/1.jpg",
+		"cor": "branco",
+		"tamanho": "34",
+		"descrição": "",
+		"category": "promocao",
+		"price": 100,
+		"genero": "M",
+		"qnt": "10"
+	
+	},
+	{
+		"id": "2",
+		"modelo": "Tenis",
+		"image": "public/img/imgproduct/3/IMG_4106.PNG",
+		"cor": "branco",
+		"tamanho": "34",
+		"descrição": "",
+		"category": "promocao",
+		"price": 100,
+		"genero": "M",
+		"qnt": "10"
+	},
+	{
+		"id": "3",
+		"modelo": "Gecko",
+		"image": "public/img/imgproduct/4/1.jpg",
+		"cor": "branco",
+		"tamanho": "34",
+		"descrição": "",
+		"category": "promocao",
+		"price": 100,
+		"genero": "M",
+		"qnt": "10"
+	},
+	{
+		"id": "3",
+		"modelo": "Gecko",
+		"image": "public/img/imgproduct/4/1.jpg",
+		"cor": "branco",
+		"tamanho": "34",
+		"descrição": "",
+		"category": "mais vendidos",
+		"price": 100,
+		"genero": "M",
+		"qnt": "10"
+	},
+	{
+		"id": "3",
+		"modelo": "Gecko",
+		"image": "public/img/imgproduct/4/1.jpg",
+		"cor": "branco",
+		"tamanho": "34",
+		"descrição": "",
+		"category": "mais vendidos",
+		"price": 100,
+		"genero": "M",
+		"qnt": "10"
+	},
+	{
+		"id": "3",
+		"modelo": "Gecko",
+		"image": "public/img/imgproduct/4/1.jpg",
+		"cor": "branco",
+		"tamanho": "34",
+		"descrição": "",
+		"category": "mais vendidos",
+		"price": 100,
+		"genero": "M",
+		"qnt": "10"
+	},
+	{
+		"id": "3",
+		"modelo": "Gecko",
+		"image": "public/img/imgproduct/4/1.jpg",
+		"cor": "branco",
+		"tamanho": "34",
+		"descrição": "",
+		"category": "mais vendidos",
+		"price": 100,
+		"genero": "M",
+		"qnt": "10"
+	},
+	{
+		"id": "3",
+		"modelo": "Gecko",
+		"image": "public/img/imgproduct/4/1.jpg",
+		"cor": "branco",
+		"tamanho": "34",
+		"descrição": "",
+		"category": "mais vendidos",
+		"price": 100,
+		"genero": "M",
+		"qnt": "10"
+	},
+	{
+		"id": "3",
+		"modelo": "Gecko",
+		"image": "public/img/imgproduct/4/1.jpg",
+		"cor": "branco",
+		"tamanho": "34",
+		"descrição": "",
+		"category": "mais vendidos",
+		"price": 100,
+		"genero": "M",
+		"qnt": "10"
+	},
+	{
+		"id": "3",
+		"modelo": "Gecko",
+		"image": "public/img/imgproduct/4/1.jpg",
+		"cor": "branco",
+		"tamanho": "34",
+		"descrição": "",
+		"category": "mais vendidos",
+		"price": 100,
+		"genero": "M",
+		"qnt": "10"
+	},
+	{
+		"id": "3",
+		"modelo": "Gecko",
+		"image": "public/img/imgproduct/4/1.jpg",
+		"cor": "branco",
+		"tamanho": "34",
+		"descrição": "",
+		"category": "mais vendidos",
+		"price": 100,
+		"genero": "M",
+		"qnt": "10"
+	},
+	{
+		"id": "3",
+		"modelo": "Gecko",
+		"image": "public/img/imgproduct/4/1.jpg",
+		"cor": "branco",
+		"tamanho": "34",
+		"descrição": "",
+		"category": "mais vendidos",
+		"price": 100,
+		"genero": "M",
+		"qnt": "10"
+	},
+	{
+		"id": "3",
+		"modelo": "Gecko",
+		"image": "public/img/imgproduct/4/1.jpg",
+		"cor": "branco",
+		"tamanho": "34",
+		"descrição": "",
+		"category": "mais vendidos",
+		"price": 100,
+		"genero": "M",
+		"qnt": "10"
+	}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
 
