@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/perfil.css">
+<title>Menina dos Sapatos - Perfil</title>
+</head>
+<body>
+  <%- include("./partials/header") %>
+  <main>
+    <div class="container">
+      <div class="submenu">
+        <h1>Minha Conta</h1>
+        <nav>
+          <ul class="Minhaconta">
+            <li class="menu1"><a class="link1" href="/perfil">Meu Perfil</a></li>
+            <li class="menu1"><a class="link2" href="/enderecoDeEntrega">Endereço de Entrega</a></li>
+            <li class="menu1"><a class="link3" href="/dadosDePagamento">Dados de Pagamento</a></li>
+            <li class="menu1"><a class="link4" href="#">Histórico de Pedidos</a></li>
+            <li class="menu1"><a class="link4" href="#">Trocas e Devoluções</a></li>
+            <li class="menu1"><a class="link6" href="#">Lista de Desejos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div>
+    <div class="Meuperfil">
+      <h2>Meu Perfil</h2>
+      <nav id="submenu2">
+        <ul class="perfil">
+          <li class="menu1"><a class="container3">Nome: Maria Silva</a></li>
+          <li class="menu1"><a class="container3">Email: maria.silva@gmail.com</a></li>
+          <li class="menu1"><a class="container3">CPF: 000.000.000-00</a></li>
+          <li class="menu1"><a class="container3">Data de Nascimento: 00/00/0000</a></li>
+          <li class="menu1"><a class="container3">Celular: (11) 99999-9999</a></li>
+          <li class="menu1"><a class="container3">Telefone fixo: (11) 9999-9999</a></li>
+          <li class="menu1"><a class="container">Senha: ********</a></li>
+        </ul>
+
+      </nav>
+    </div>
+      <div class="container2">
+        <nav>
+          <h3 class="menu1"><a class="link7" href="#">Alterar Dados</h3>
+          <h3 class="menu1"><a class="link7" href="#">Alterar Senha</h3>
+        </nav>
+      </div>
+    </div>
+  </main>
+<%- include("./partials/footer") %>
+</html>

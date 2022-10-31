@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dadosdepagamento.css">
+    <title>Menina dos Sapatos - Dados de Pagamento</title>    
+  </head>
+  <body>
+    <%- include("./partials/header") %>
+    <main>       
+        <div class="container">
+          <h1>Minha Conta</h1> 
+            <ul class="Minhaconta">
+              <li class="menu1"><a class="link1" href="/perfil">Meu Perfil</a></li>
+              <li class="menu1"><a class="link1" href="/enderecoDeEntrega">Endereço de Entrega</a></li>
+              <li class="menu1"><a class="link2" href="/dadosDePagamento">Dados de Pagamento</a></li>
+              <li class="menu1"><a class="link1" href="#">Histórico de Pedidos</a></li>
+              <li class="menu1"><a class="link1" href="#">Trocas e Devoluções</a></li>
+              <li class="menu1"><a class="link1" href="/favoritos">Lista de Desejos</a></li>
+            </ul>
+          </nav>
+          <h2>Dados de Pagamento</h2>
+          <nav id="submenu">
+              <ul>
+                <li class="menu2"><a class="container" >MARIA SILVA ****_****_****_5472 Vencimento: 08/2032</a></li>
+                <p><input type="radio" name="entrega" id="entrega" value="entrega"><label>Padrão</label></p> 
+                <li class="menu2"><a class="container" >Excluir</a></li>
+              </ul>
+          </nav>
+          <nav>
+            <h3 class="menu1"><a class="link1" href="#">Cadastrar Novo Cartão</h3>
+          </nav>
+        </div>
+    </main>
+<%- include("./partials/footer") %>
+  </body>        
+</html>
