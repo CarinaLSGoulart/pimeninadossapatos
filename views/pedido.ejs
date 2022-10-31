@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/pedido.css">
+  <title>Menina dos Sapatos - Pedidos</title>
+</head>
+<body>
+  <%- include("./partials/header") %>
+  <main>
+    <div class="subMenu">
+      <nav id="submenu">
+        <ul>
+          <li class="menu1"><a class="link1" href="#">Identificação</a></li>
+          <li class="menu1"><a class="link1" href="#">Endereço e Pagamento</a></li>
+          <li class="menu1"><a class="link1" href="#">Confirmação</a></li>
+        </ul>
+      </nav>
+    </div>
+    <form class="formulario" action="" method="post">
+      <section id="pedido-container">
+        <div class="endereço-container">
+          <h2>1. Endereços</h2>
+          <h3> Endereço Principal</h3> <br> <br> <br> <br> <br>
+          <!--CARREGA ENDEREÇO DO BANCO DE DADOS-->
+          <ul class="endereço">
+            <li class="end01"><a class="link1" href="#">Editar</a></li>
+            <li class="end01"><a class="link1" href="#">Selecionar outro</a></li>
+          </ul>
+          <button class="inserir">Inserir novo endereço</button> <br><br>
+          <p>
+          <h3> Endereço de Entrega</h3>
+          </p> <br> <br> <br>
+          <!--CARREGA ENDEREÇO DO BANCO DE DADOS-->
+          <p><input type="checkbox" name="endereco" id="endereco" value="endereco"><label> Endereço de entrega igual ao endereço principal</label></p>
+        </div>
+        <div class="entrega-container">
+          <h2>2. Opções de Entrega</h2>
+          <p><input type="radio" name="entrega" id="entrega" value="entrega"><label> Normal</label></p> <br> <br>
+          <p><input type="radio" name="entrega" id="entrega" value="entrega"><label>  Retire no local</label>
+          </p>
+        </div>
+        <div class="pagamento-container">
+          <h2>3. Forma de Pagamento</h2>
+          <p><img class="boleto" src="./img/imgloguin/codigo-de-barras.png" alt="codigobarra">
+            <input type="radio" name="pagamento" id="pagamento" value="pagamento"><label class="boleto1"> Boleto</label> </p>
+          <p><img class="cartaocredito" src="./img/imgloguin/cartao-de-credito.png" alt="cartaocredito">
+            <input type="radio" name="pagamento" id="pagamento" value="pagamento"> <label class="cartao1"> Cartão Crédito/ Débito</label>
+          </p>
+          <h3>1. Dados do Cartão</h3>
+          <p> <label for="numero">Numero do Cartão</label>
+            <input type="text" name="numero" id="numero" required>
+          </p>
+          <p> <label for="nome">Seu Nome (como no cartão)</label>
+            <input type="text" name="nomecartao" id="nomecartao" required>
+          </p>
+          <p><p><label for="vencimento">Vencimento</label> </p>
+            <select name="mes" id="mes">
+              <option selected disabled>Selecione</option>
+              <option value="jan">01</option>
+              <option value="fev">02</option>
+              <option value="mar">03</option>
+              <option value="abr">04</option>
+              <option value="mai">05</option>
+              <option value="jun">06</option>
+              <option value="jul">07</option>
+              <option value="ago">08</option>
+              <option value="set">09</option>
+              <option value="out">10</option>
+              <option value="nov">11</option>
+              <option value="dez">12</option>
+            </select>
+            <select name="ano" id="ano">
+              <option selected disabled>Selecione</option>
+              <option value="jan">22</option>
+              <option value="fev">23</option>
+              <option value="mar">24</option>
+              <option value="abr">25</option>
+              <option value="mai">26</option>
+              <option value="jun">27</option>
+              <option value="jul">28</option>
+              <option value="ago">29</option>
+              <option value="set">30</option>
+            </select>
+          </p>
+            <p> <label for="CVV">Código de Segurança - CVV</label>
+              <input type="text" name="cvv" id="cvv" required>
+            </p>
+            <p>
+              <input type="checkbox" name="salvardado" id="salvardado"><label for="salvardado">Salvar cartão
+              para próxima compra</label>
+            </p>
+            <p class="limite">* O limite do cartão de débito deve ser igual ou superior ao valor total da
+              compra.</p>
+            <h3>2. Autenticação</h3>
+            <p class="autenticacao">Para sua segurança será solicitada a autenticação do seu cartão de
+              crédito/débito ao clicar em 'Finalizar Compra'.</p>
+        </div>
+          <div class="resumo-container">
+            <h2>Resumo da Compra</h2>
+            <!--Informações deverão ser carregadas via JS-->
+            <img class="sapato" src="./img/imgloguin/tenis branco.jpg" alt="tenis">
+            <p>Tenis Branco <br>
+              Tamanho: 37 / Quantidade: 1 <br>
+              R$ 100,00</p>
+            <p>
+            <h2>Cupom de Desconto e Vale Troca</h2>
+            </p>
+            <p><input type="text" name="cupom" id="cupom" placeholder="Cupom de Desconto">
+              <button class="aplicar">Aplicar</button>
+            </p>
+            <p><input type="text" name="valetroca" id="valetroca" placeholder="Vale Troca">
+              <button class="aplicar">Aplicar</button>
+            </p>
+            <h3>Subtotal:</h3>
+            <h3>Frete:</h3>
+            <h3>TOTAL:</h3>
+            <button class="finalizar">Finalizar Compra</button>
+            <p>Ao continuar, declaro que estou ciente e aceito os <a class="link2" href="#">Termos de Uso</a> e
+              a <a class="link2" href="#">Política de Privacidade</a></p>
+            <input type="checkbox" name="recebernovidades" id="recebernovidades"><label for="recebernovidades">
+              Quero
+              receber novidades por email</label>
+          </div>
+      </section>
+    </form>
+  </main>
+<%- include("./partials/footer") %>
+</body>
+</html>
