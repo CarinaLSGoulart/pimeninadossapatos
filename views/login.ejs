@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menina dos Sapatos</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/login.css">
     <script src="https://kit.fontawesome.com/32cf0bc5ba.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -19,14 +19,21 @@
           <p>Conecte-se usando seu cadastro de outra plataforma</p>
       </div>
       <div class="imagensAcesso">
-          <img class="logoGoogle" src="./img/imgloguin/Google.png" alt="Logo Google">
-          <img class="logoFacebook" src="./img/imgloguin/Facebook.png" alt="Logo Facebook">
-          <img class="logoApple" src="./img/imgloguin/Apple.png" alt="Logo Google">
+          <img class="logoGoogle" src="/img/imgloguin/Google.png" alt="Logo Google">
+          <img class="logoFacebook" src="/img/imgloguin/Facebook.png" alt="Logo Facebook">
+          <img class="logoApple" src="/img/imgloguin/Apple.png" alt="Logo Google">
       </div>
       <!-- Formulário Tenho Cadastro -->
       <div class="formularios">
+        <% if(typeof errors != 'undefined'){ %>
+            <ul>
+                <% for(let i=0; i < erros.length;i++){ %>
+                    <li style="color: red"><%=errors[i] %></li>
+                <%} %>
+            </ul>
+        <%} %>
         <div class="tenhoCadastro">
-          <form action="Cadastro" method="post">
+          <form action="/login" method="post">
             <fieldset>
               <legend>TENHO CADASTRO</legend>
               <div class="inputBox">
@@ -58,7 +65,7 @@
             <legend> QUERO ME CADASTRAR </legend>
             <div class="inputBox">
               <label for="email">E-mail*</label>
-              <input type="email" id="email" name="email" class="inputUser" placeholder="E-mail"
+              <input type="email" id="email" name="emailCadastro" class="inputUser" placeholder="E-mail"
               required />
             </div>
             <div class="inputBox">
@@ -72,15 +79,15 @@
             </div>
             <div class="inputBox">
               <label for="senha">Senha:</label>
-              <input type="password" id="password" name="password" class="inputUser" placeholder="Senha"
+              <input type="password" id="password" name="passwordCadastro" class="inputUser" placeholder="Senha"
               required />
             </div>
             <div class="boxAviso">
-              <img class="aviso" src="./img/imgloguin/aviso.png" alt="aviso">
+              <img class="aviso" src="/img/imgloguin/aviso.png" alt="aviso">
               <p class="textpaviso">Mínimo 6 dígitos</p>
-              <img class="aviso" src="./img/imgloguin/aviso.png" alt="aviso">
+              <img class="aviso" src="/img/imgloguin/aviso.png" alt="aviso">
               <p class="textpaviso">Letras</p>
-              <img class="aviso" src="./img/imgloguin/aviso.png" alt="aviso">
+              <img class="aviso" src="/img/imgloguin/aviso.png" alt="aviso">
               <p class="textpaviso">Números</p>
             </div>
             <div class="password">
