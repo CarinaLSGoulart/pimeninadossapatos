@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/feminino.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/feminino.css">
   <title>Menina dos Sapatos - Produtos Femininos</title>
 </head>
 <body>
@@ -22,58 +21,19 @@
       <p class="tituloFiltro"> FILTROS </p>
       <div class="removerFiltros">
         <p class="remove"> Remover Filtros</p>
-        <img class="lixo" src="./img/imgFeminino/lixeira.png" alt="remover-filtros">
+        <img class="lixo" src="/img/imgFeminino/lixeira.png" alt="remover-filtros">
       </div>
       <div class="busca">
         <p class="busque"> Busque por preço </p>
     </div>
   </div>
     <div class="produtos">
-      <div class="produto1">
-        <a href="/product"><img class="produtos-femininos"
-          src="./img/imgproduct/03a6d618-afd4-44cd-999f-65cca4398c09.jpg" alt="tenis1"></a>
-        <p class="preco">100,00</p>
-      </div>
-      <div class="produto2">
-        <a href="/product"><img class="produtos-femininos"
-          src="./img/imgproduct/042408e1-9058-4e26-a075-862374f19fea.jpg" alt="tenis2"></a>
-        <p class="preco">100,00</p>
-      </div>
-      <div class="produto3">
-        <a href="/product"><img class="produtos-femininos"
-          src="./img/imgproduct/04a4dfd4-e4ab-4f9c-8f60-e956cb070c03.jpg" alt="tenis3"></a>
-        <p class="preco">100,00</p>
-      </div>
-      <div class="produto4">
-        <a href="/product"><img class="produtos-femininos"
-          src="./img/imgproduct/03a6d618-afd4-44cd-999f-65cca4398c09.jpg" alt="tenis1"></a>
-        <p class="preco">100,00</p>
-      </div>
-      <div class="produto5">
-        <a href="/product"><img class="produtos-femininos"
-          src="./img/imgproduct/042408e1-9058-4e26-a075-862374f19fea.jpg" alt="tenis2"></a>
-        <p class="preco">100,00</p>
-      </div>
-      <div class="produto6">
-        <a href="/product"><img class="produtos-femininos"
-          src="./img/imgproduct/04a4dfd4-e4ab-4f9c-8f60-e956cb070c03.jpg" alt="tenis3"></a>
-        <p class="preco">100,00</p>
-      </div>
-      <div class="produto7">
-        <a href="/product"><img class="produtos-femininos"
-          src="./img/imgproduct/03a6d618-afd4-44cd-999f-65cca4398c09.jpg" alt="tenis1"></a>
-        <p class="preco">100,00</p>
-      </div>
-      <div class="produto8">
-        <a href="/product"><img class="produtos-femininos"
-          src="./img/imgproduct/042408e1-9058-4e26-a075-862374f19fea.jpg" alt="tenis2"></a>
-        <p class="preco">100,00</p>
-      </div>
-      <div class="produto9">
-        <a href="/product"><img class="produtos-femininos"
-          src="./img/imgproduct/04a4dfd4-e4ab-4f9c-8f60-e956cb070c03.jpg" alt="tenis3"></a>
-        <p class="preco">100,00</p>
-      </div>
+      <% feminino.forEach(function(modelo){ %>
+             <div class="produto1">
+               <a href="/produto"><img class="produtos-femininos" src="<%=modelo.img %>" alt="tenis1"></a>
+               <p class="preco"><%=modelo.price %></p>
+              </div>
+      <% }) %>
     </div>
   </div>    
   </main>
