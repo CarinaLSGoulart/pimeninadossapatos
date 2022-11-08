@@ -1,37 +1,40 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const session = require('express-session')
 
 /* ===== Biblioteca ===== */
 app.use(express.json());
 
 
 /* =========== Routes =========== */
-const routerHome = require('./routes/home');
+const routesHome = require('./routes/home');
 const dadosDePagamento = require('./routes/dadosDePagamento');
 const routerenderecoDeEntrega = require('./routes/enderecoDeEntrega');
-const routerFeminino = require('./routes/feminino');
-const routerLogin = require('./routes/login');
-const routerPedido = require('./routes/pedido');
-const routerPerfil = require('./routes/perfil');
-const routerPoliticas = require('./routes/politicas');
-const routerProduct = require('./routes/product');
-const routerSacola = require('./routes/sacola');
+const routesUsuario = require('./routes/usuario');
+const routesPedido = require('./routes/pedido');
+const routesPoliticas = require('./routes/politicas');
+const routesProduto = require('./routes/produto');
+const routesFeminino = require('./routes/feminino');
+const routesSacola = require('./routes/sacola');
+const routesCadastro = require('./routes/usuario')
 
 /* Log */
 let logmiddleware = require('./middlewares/logSite')
 app.use(logmiddleware)
 
-app.use('/', routerHome);
+app.use(session({secret: 'MeninaDosSapatos'}))
+
+app.use('/', routesHome);
 app.use('/dadosDePagamento', dadosDePagamento);
 app.use('/enderecoDeEntrega', routerenderecoDeEntrega);
-app.use('/Feminino', routerFeminino);
-app.use('/Login', routerLogin);
-app.use('/Pedido', routerPedido);
-app.use('/Perfil', routerPerfil);
-app.use('/Politicas', routerPoliticas);
-app.use('/Product', routerProduct);
-app.use('/Sacola', routerSacola);
+app.use('/Login', routesUsuario);
+app.use('/Pedido', routesPedido);
+app.use('/Politicas', routesPoliticas);
+app.use('/Produto', routesProduto);
+app.use('/Sacola', routesSacola);
+app.use('/feminino', routesFeminino);
+app.use('/cadastro', routesCadastro);
 
 /* ===== EJS ===== */
 app.set("view engine", "ejs") 

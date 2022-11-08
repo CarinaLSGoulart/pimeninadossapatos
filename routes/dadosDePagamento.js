@@ -1,7 +1,7 @@
 let express = require('express')
 let router = express.Router();
 
-const dadosdepagamentoController = require('../controllers/dadosDePagamento')
+const dadosdepagamentoController = require('../controllers/dadosDePagamentoController')
 
 router.get('/', dadosdepagamentoController.dadosDePagamento)
 
