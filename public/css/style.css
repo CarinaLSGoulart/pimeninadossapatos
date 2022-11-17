@@ -12,6 +12,7 @@
 
 }
 
+
 #menu {
   display: flex;
   justify-content: space-between;
@@ -23,7 +24,9 @@
   top: 0;
   left: 0;
   background: #ffffff;
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3)
+  box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.1);
+  transition:  0.3s ease-in-out;
+ 
 }
 
 .nav {
@@ -41,8 +44,9 @@
 }
 
 .nav:hover {
-  background-color: #FFCC01;
-  border-radius: 5%;
+  background-color: #FFCC01 ;
+  border-radius: 2%;
+  transition: 0.8s ease-in-out;
 }
 
 /* CENTRALIZAR LOGO E NAO MOVIMENTAR Ao EXECUTAR ANIMAÇÃO DE PESQUISAR */
@@ -98,18 +102,16 @@
 
 .lente {
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 0px;
   width: 100%;
-  height: 25px;
+  height: 40px;
   align-items: center;
   margin-top: 3px;
 }
 
 .icon-lente img {
   width: 100%;
-  height: 20px;
-
-}
+  }
 
 .icon {
   display: flex;
@@ -123,24 +125,40 @@
 
 .icones {
   list-style: none;
-  width: 100%;
+  width: 500px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-right: 20px;
-  /* transition: 0.6seg; */
+
+ }
+
+ /* EFEITO ZOOM ÍCONES */
+
+.usuario-icon, .favoritos-icon, .sacola-icon  {
+    overflow: hidden;
+}
+
+.usuario-icon img, .favoritos-icon img, .sacola-icon img {
+  padding: 5%;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  height: 35px;
+}
+
+.usuario-icon:hover img, .favoritos-icon:hover img, .sacola-icon:hover img{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 
 
-
-
-.icon-icones/* :hover  */{
-
+.icon-icones{
   display: flex;
   align-items: center;
   margin-right: 10px;
   border-radius: 100%;
+
 }
 
 footer {
