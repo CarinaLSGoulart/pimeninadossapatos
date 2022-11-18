@@ -44,4 +44,4 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 /* ===== Error ===== */
 
-app.listen(3000, () => {console.log('Servidor rodando na porta 3000')});
+app.listen(3333, () => {console.log('Servidor rodando na porta 3333')});
