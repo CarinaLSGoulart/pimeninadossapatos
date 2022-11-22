@@ -20,6 +20,7 @@ h2 {
 
 .sac-titulo {
     font-size: 20px;
+    text-align: center;
 }
 
 .sacola-titulo {
@@ -36,7 +37,9 @@ h2 {
     grid-gap: 5px;
     width: 1200px;
     max-width: 100%;
-    margin: 0px 80px;
+    text-align: center;
+   
+
 }
 
 .sacola-item1 {
