@@ -10,6 +10,13 @@ const validacoes = [
     check('password')
     .isEmpty().withMessage('Senha não pode ser vazia').bail()
     .isStrongPassword().withMessage('Deve ser uma senha forte.').bail(),
+    check('confpassword')
+    .isEmpty().withMessage('Confirmação de senha não pode estar vazia').bail()
+    .custom((value, { req }) => {
+        if (value !== req.body.password) {
+          throw new Error('A senha deve ser igual.')
+        }
+        return true;}),    
 ]
 
 router.get('/', usuarioController.login)
