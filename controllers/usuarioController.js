@@ -18,8 +18,8 @@ const usuarioController = {
     logar: (req, res) => {
         let errors = validationResult(req)
         if (!errors.isEmpty()){
-            return res.render('login', {errors: errors.errors})
-        }
+            return res.render('login', {errors: errors.errors})        
+                }
 
         let user = users.find(usr => usr.email == req.body.email)        
         if (user){
