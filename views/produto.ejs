@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menina dos Sapatos - Produtos</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/produto.css">
+</head>
+<body>
+  <%- include("./partials/header") %>
+  <main>
+    <section class="allcontainer">
+      <div class="containe">
+        <div class="left-side">
+          <div class="items">
+            <div class="select-image">
+              <img src="./img/imgProduto/1/1.PNG">
+            </div>
+            <div class="thumbnails">
+              <div class="thumbnail">
+                <img src="./img/imgProduto/1/e2d4f7f9-8a72-4b8a-9090-18e5de582896.png">
+              </div>
+              <div class="thumbnail">
+                <img src="./img/imgProduto/1/ebe28d51-fab4-4f04-8090-5e76118b64e4.png">
+              </div>
+              <div class="thumbnail">
+                <img src="./img/imgProduto/1/f38f95b1-4d74-4d7a-a085-532baa36883b.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="content">
+            <div class="especifc">
+              <h6>Gecko</h6>
+              <h1>Edição limitada</h1>
+            </div>
+            <p>Este é o StickyShoe Gecko, um modelo PROFISSIONAL, ou seja, com características desenvolvidas a partir de necessidades que devem diversas rotinas profissionais.
+              - Impermeável
+              - Solado antiderrapante realmente <strong class="strbold">INCRÍVEL</strong>: Este solado é testado e aprovado pelo Ministério do Trabalho. Ideal para Profissionais que trabalham em pisos escorregadios, ensaboados, com restos de alimento, enfim, um solado antiderrapante realmente robusto.
+              - Elemento anti torção: Na região da curvatura dos pés (arco plantar) este modelo possui um elemento feito em material rígido. 
+              - Palmilha absorvente: Feita em 3 camadas, com tecido absorvente, esta palmilha garante que seus pés vão ficar bem sequinhos.
+              Tudo isso com Aprovação do Ministério do Trabalho e feito respeitando o formato dos pés Femininos.
+              A loja de Profissionais que Amam o que Fazem.</p>
+            <div class="prices">
+              <span class="price"> R$ 100,00</span>
+              <span class="off"> R$ 135,00</span>
+            </div>
+            <div class="options">
+              <div class="amount">
+                <div class="minus">
+                  <img src="./img/imgProduto/icons/icon-minus.svg" alt="minus">
+                </div>
+                <span>0</span>
+                <div class="plus">
+                  <img src="./img/imgProduto/icons/icon-plus.svg" alt="plus">
+                </div>
+              </div>
+              <a href="" class="button"><img src="./img/imgProduto/icons/icon-cart.svg" class="cart">Adicionar ao carrinho</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-maisVendidos">
+        <div>
+          <h1>FAVORITOS</h1>
+        </div>
+        <div class="ramodeflor">
+          <img src="./img/imgHome/RAMO DE FLOR.png" alt="ramo de flor">
+        </div>
+      </div>
+      <section class="container-img-maisVendidos">
+        <div>
+          <a href="/produto"><img src="./img/imgHome/IMG_4105.PNG" class="produto" alt="produto1"></a>
+        </div>
+        <div>
+          <a href="/produto"><img src="./img/imgHome/IMG_4106.PNG" class="produto" alt="produto2"></a>
+        </div>
+        <div>
+          <a href="/produto"><img src="./img/imgHome/IMG_4107.PNG" class="produto" alt="produto3"></a>
+        </div>
+        <!-- <div>
+          <a href="#"><img src="./imghome/IMG_4108.PNG" class="produto" alt="produto4"></a>
+        </div>
+        <div>
+          <a href="#"><img src="./imghome/IMG_4109.PNG" class="produto" alt="produto5"></a>
+        </div>
+        <div>
+          <a href="#"><img src="./imghome/IMG_4110.PNG" class="produto" alt="produto6"></a>
+        </div>
+        <div>
+          <a href="#"><img src="./imghome/IMG_4111.PNG" class="produto" alt="produto7"></a>
+        </div>
+        <div>
+          <a href="#"><img src="./imghome/IMG_4112.PNG" class="produto" alt="produto8"></a>
+        </div> -->
+      </section>
+    </section>
+  </main>
+  <%- include("./partials/footer") %>
+  <script src="./js/carrossel.js"></script>
+</body>
+
+</html>

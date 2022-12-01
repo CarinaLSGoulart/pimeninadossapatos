@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "email": "glauce@email.com",
+        "pass": "abcd1234"
+    },
+    {
+        "id": "2",
+        "email": "carina@email.com",
+        "pass": "efgh5678"
+    },
+    {
+        "id": "3",
+        "email": "rhuan@email.com",
+        "pass": "ijkl9012"
+    },
+    {
+        "id": "4",
+        "email": "thiago@email.com",
+        "pass": "mnop3456"
+    },
+    {
+        "id": "5",
+        "email": "gustavop@email.com",
+        "pass": "qrst7890"
+    }
+]

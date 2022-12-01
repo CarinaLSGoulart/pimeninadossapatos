@@ -1,213 +1,300 @@
-[
-	{
-		"id": "0",
-		"modelo": "social",
-		"image": "public/img/imgproduct/1/1.PNG",
-		"cor": "branco",
-		"tamanho": "34",
-		"descrição": "",
-		"category": "promocao",
-		"price": 100,
-		"genero": "M",
-		"qnt": "10"
-	},
-	{
-		"id": "3",
-		"modelo": "Gecko",
-		"image": "public/img/imgproduct/4/1.jpg",
-		"cor": "branco",
-		"tamanho": "34",
-		"descrição": "",
-		"category": "promocao",
-		"price": 100,
-		"genero": "M",
-		"qnt": "10"
-	},
-	{
-		"id": "3",
-		"modelo": "Gecko",
-		"image": "public/img/imgproduct/4/1.jpg",
-		"cor": "branco",
-		"tamanho": "34",
-		"descrição": "",
-		"category": "promocao",
-		"price": 100,
-		"genero": "M",
-		"qnt": "10"
-	},
-	{
-		"id": "1",
-		"modelo": "tradicional",
-		"image": "public/img/imgproduct/2/1.jpg",
-		"cor": "branco",
-		"tamanho": "34",
-		"descrição": "",
-		"category": "promocao",
-		"price": 100,
-		"genero": "M",
-		"qnt": "10"
-	
-	},
-	{
-		"id": "2",
-		"modelo": "Tenis",
-		"image": "public/img/imgproduct/3/IMG_4106.PNG",
-		"cor": "branco",
-		"tamanho": "34",
-		"descrição": "",
-		"category": "promocao",
-		"price": 100,
-		"genero": "M",
-		"qnt": "10"
-	},
-	{
-		"id": "3",
-		"modelo": "Gecko",
-		"image": "public/img/imgproduct/4/1.jpg",
-		"cor": "branco",
-		"tamanho": "34",
-		"descrição": "",
-		"category": "promocao",
-		"price": 100,
-		"genero": "M",
-		"qnt": "10"
-	},
-	{
-		"id": "3",
-		"modelo": "Gecko",
-		"image": "public/img/imgproduct/4/1.jpg",
-		"cor": "branco",
-		"tamanho": "34",
-		"descrição": "",
-		"category": "mais vendidos",
-		"price": 100,
-		"genero": "M",
-		"qnt": "10"
-	},
-	{
-		"id": "3",
-		"modelo": "Gecko",
-		"image": "public/img/imgproduct/4/1.jpg",
-		"cor": "branco",
-		"tamanho": "34",
-		"descrição": "",
-		"category": "mais vendidos",
-		"price": 100,
-		"genero": "M",
-		"qnt": "10"
-	},
-	{
-		"id": "3",
-		"modelo": "Gecko",
-		"image": "public/img/imgproduct/4/1.jpg",
-		"cor": "branco",
-		"tamanho": "34",
-		"descrição": "",
-		"category": "mais vendidos",
-		"price": 100,
-		"genero": "M",
-		"qnt": "10"
-	},
-	{
-		"id": "3",
-		"modelo": "Gecko",
-		"image": "public/img/imgproduct/4/1.jpg",
-		"cor": "branco",
-		"tamanho": "34",
-		"descrição": "",
-		"category": "mais vendidos",
-		"price": 100,
-		"genero": "M",
-		"qnt": "10"
-	},
-	{
-		"id": "3",
-		"modelo": "Gecko",
-		"image": "public/img/imgproduct/4/1.jpg",
-		"cor": "branco",
-		"tamanho": "34",
-		"descrição": "",
-		"category": "mais vendidos",
-		"price": 100,
-		"genero": "M",
-		"qnt": "10"
-	},
-	{
-		"id": "3",
-		"modelo": "Gecko",
-		"image": "public/img/imgproduct/4/1.jpg",
-		"cor": "branco",
-		"tamanho": "34",
-		"descrição": "",
-		"category": "mais vendidos",
-		"price": 100,
-		"genero": "M",
-		"qnt": "10"
-	},
-	{
-		"id": "3",
-		"modelo": "Gecko",
-		"image": "public/img/imgproduct/4/1.jpg",
-		"cor": "branco",
-		"tamanho": "34",
-		"descrição": "",
-		"category": "mais vendidos",
-		"price": 100,
-		"genero": "M",
-		"qnt": "10"
-	},
-	{
-		"id": "3",
-		"modelo": "Gecko",
-		"image": "public/img/imgproduct/4/1.jpg",
-		"cor": "branco",
-		"tamanho": "34",
-		"descrição": "",
-		"category": "mais vendidos",
-		"price": 100,
-		"genero": "M",
-		"qnt": "10"
-	},
-	{
-		"id": "3",
-		"modelo": "Gecko",
-		"image": "public/img/imgproduct/4/1.jpg",
-		"cor": "branco",
-		"tamanho": "34",
-		"descrição": "",
-		"category": "mais vendidos",
-		"price": 100,
-		"genero": "M",
-		"qnt": "10"
-	},
-	{
-		"id": "3",
-		"modelo": "Gecko",
-		"image": "public/img/imgproduct/4/1.jpg",
-		"cor": "branco",
-		"tamanho": "34",
-		"descrição": "",
-		"category": "mais vendidos",
-		"price": 100,
-		"genero": "M",
-		"qnt": "10"
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-]
-
+{
+    "produtos": [
+        {
+            "produto": "Sticky Tenis Monocolor",
+            "genero": "feminino",
+            "modelos": [
+                {
+                    "codigo": "stw-vedm",
+                    "cor": "Verde Militar",
+                    "img": "img/imgProduto/3f471ef8-f36e-4747-a1ce-b4d864d44b22.png",
+                    "price": 100,
+                    "numeracoes": [
+                        {
+                            "id": "1",
+                            "tamanho": 33,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "2",
+                            "tamanho": 34,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "3",
+                            "tamanho": 35,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "4",
+                            "tamanho": 36,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "5",
+                            "tamanho": 37,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "6",
+                            "tamanho": 38,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "7",
+                            "tamanho": 39,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "8",
+                            "tamanho": 40,
+                            "qnt": "10"
+                        }
+                    ]
+                },
+                {
+                    "codigo": "stw-bca",
+                    "cor": "Branca",
+                    "img": "img/imgProduto/0bb60394-cc4a-40e0-8da9-959060efe63e.jpg",
+                    "price": 100,
+                    "numeracoes": [
+                        {
+                            "id": "9",
+                            "tamanho": 33,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "10",
+                            "tamanho": 34,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "11",
+                            "tamanho": 35,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "12",
+                            "tamanho": 36,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "13",
+                            "tamanho": 37,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "14",
+                            "tamanho": 38,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "15",
+                            "tamanho": 39,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "16",
+                            "tamanho": 40,
+                            "qnt": "10"
+                        }
+                    ]
+                },
+                {
+                    "codigo": "stw-pta",
+                    "cor": "Preta",
+                    "img": "img/imgProduto/0e111080-a050-402d-bcad-d48017a01ce4.jpg",
+                    "price": 100,
+                    "numeracoes": [
+                        {
+                            "id": "17",
+                            "tamanho": 33,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "18",
+                            "tamanho": 34,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "19",
+                            "tamanho": 35,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "20",
+                            "tamanho": 36,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "21",
+                            "tamanho": 37,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "22",
+                            "tamanho": 38,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "23",
+                            "tamanho": 39,
+                            "qnt": "10"
+                        },
+                        {
+                            "id": "24",
+                            "tamanho": 40,
+                            "qnt": "10"
+                        }
+                    ]
+                }
+            ]
+        },
+{
+    "produto": "Sticky Shoes Monocolor",
+    "genero": "feminino",
+    "modelos": [
+        {
+            "codigo": "ssw-vdhos",
+            "cor": "Verde Hospitalar",
+            "img": "/img/imgProduto/SSW-VDHOS (5).png",
+            "price": 100,
+            "numeracoes": [
+                {
+                    "id": "25",
+                    "tamanho": 33,
+                    "qnt": "10"
+                },
+                {
+                    "id": "26",
+                    "tamanho": 34,
+                    "qnt": "10"
+                },
+                {
+                    "id": "27",
+                    "tamanho": 35,
+                    "qnt": "10"
+                },
+                {
+                    "id": "28",
+                    "tamanho": 36,
+                    "qnt": "10"
+                },
+                {
+                    "id": "29",
+                    "tamanho": 37,
+                    "qnt": "10"
+                },
+                {
+                    "id": "30",
+                    "tamanho": 38,
+                    "qnt": "10"
+                },
+                {
+                    "id": "31",
+                    "tamanho": 39,
+                    "qnt": "10"
+                },
+                {
+                    "id": "32",
+                    "tamanho": 40,
+                    "qnt": "10"
+                }
+            ]
+        },
+        {
+            "codigo": "ssw-pik",
+            "cor": "Pink",
+            "img": "/img/imgProduto/SSW-PIK (4).jpg",
+            "price": 100,
+            "numeracoes": [
+                {
+                    "id": "33",
+                    "tamanho": 33,
+                    "qnt": "10"
+                },
+                {
+                    "id": "34",
+                    "tamanho": 34,
+                    "qnt": "10"
+                },
+                {
+                    "id": "35",
+                    "tamanho": 35,
+                    "qnt": "10"
+                },
+                {
+                    "id": "36",
+                    "tamanho": 36,
+                    "qnt": "10"
+                },
+                {
+                    "id": "37",
+                    "tamanho": 37,
+                    "qnt": "10"
+                },
+                {
+                    "id": "38",
+                    "tamanho": 38,
+                    "qnt": "10"
+                },
+                {
+                    "id": "39",
+                    "tamanho": 39,
+                    "qnt": "10"
+                },
+                {
+                    "id": "40",
+                    "tamanho": 40,
+                    "qnt": "10"
+                }
+            ]
+        },    
+{
+    "codigo": "ssw-lla",
+    "cor": "Lilas",
+    "img": "/img/imgProduto/SSW-LLA (4).jpg",
+    "price": 100,
+    "numeracoes": [
+        {
+            "id": "41",
+            "tamanho": 33,
+            "qnt": "10"
+        },
+        {
+            "id": "42",
+            "tamanho": 34,
+            "qnt": "10"
+        },
+        {
+            "id": "43",
+            "tamanho": 35,
+            "qnt": "10"
+        },
+        {
+            "id": "44",
+            "tamanho": 36,
+            "qnt": "10"
+        },
+        {
+            "id": "45",
+            "tamanho": 37,
+            "qnt": "10"
+        },
+        {
+            "id": "46",
+            "tamanho": 38,
+            "qnt": "10"
+        },
+        {
+            "id": "47",
+            "tamanho": 39,
+            "qnt": "10"
+        },
+        {
+            "id": "48",
+            "tamanho": 40,
+            "qnt": "10"
+        }
+    ]
+}]}]}

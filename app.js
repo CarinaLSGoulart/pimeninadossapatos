@@ -1,11 +1,15 @@
 const express = require('express');
 const path = require('path');
+
 const fs = require('fs');
 const createError = require('http-errors');
 
 
 /* ==== Express ==== */
 const app = express();
+
+
+const session = require('express-session')
 
 
 /* ===== Biblioteca ===== */
@@ -20,7 +24,7 @@ app.use(logmiddleware);
 
 
 /* =========== Routes =========== */
-const routerHome = require('./routes/home');
+const routesHome = require('./routes/home');
 const dadosDePagamento = require('./routes/dadosDePagamento');
 const routerenderecoDeEntrega = require('./routes/enderecoDeEntrega');
 const routerFeminino = require('./routes/feminino');
@@ -32,9 +36,19 @@ const routerPoliticas = require('./routes/politicas');
 const routerProdutos = require('./routes/produtos');
 const routerSacola = require('./routes/sacola');
 const { use } = require('./routes/home');
+const routesUsuario = require('./routes/usuario');
+const routesPedido = require('./routes/pedido');
+const routesPoliticas = require('./routes/politicas');
+const routesProduto = require('./routes/produto');
+const routesFeminino = require('./routes/feminino');
+const routesSacola = require('./routes/sacola');
+const routesCadastro = require('./routes/usuario')
 
 
-app.use('/', routerHome);
+
+app.use(session({secret: 'MeninaDosSapatos'}))
+
+app.use('/', routesHome);
 app.use('/dadosDePagamento', dadosDePagamento);
 app.use('/enderecoDeEntrega', routerenderecoDeEntrega);
 app.use('/feminino', routerFeminino);
@@ -45,6 +59,14 @@ app.use('/Perfil', routerPerfil);
 app.use('/politicas', routerPoliticas);
 app.use('/produtos', routerProdutos);
 app.use('/sacola', routerSacola);
+app.use('/Login', routesUsuario);
+app.use('/Pedido', routesPedido);
+app.use('/Politicas', routesPoliticas);
+app.use('/Produto', routesProduto);
+app.use('/Sacola', routesSacola);
+app.use('/feminino', routesFeminino);
+app.use('/cadastro', routesCadastro);
+
 
 /* ===== EJS ===== */
 app.set("view engine", "ejs") 
@@ -74,4 +96,4 @@ app.use((err, req, res, next) => {
   res.render('error');
 });
 
-app.listen(3000, () => {console.log('Servidor rodando na porta 3000')});
+app.listen(3333, () => {console.log('Servidor rodando na porta 3333')});
