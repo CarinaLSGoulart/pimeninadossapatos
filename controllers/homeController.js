@@ -1,3 +1,4 @@
+
 const fs = require('fs');
 const path = require('path');
 
@@ -21,6 +22,12 @@ const homeController = {
             maisVendidos,
             toThousand
         })
+=======
+const path = require('path')
+
+const homeController = {
+    home: (req, res) => {
+        res.render('home')
     }
 }
 

@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const session = require('express-session')
 
 const fs = require('fs');
 const createError = require('http-errors');
@@ -27,6 +28,7 @@ app.use(logmiddleware);
 const routesHome = require('./routes/home');
 const dadosDePagamento = require('./routes/dadosDePagamento');
 const routerenderecoDeEntrega = require('./routes/enderecoDeEntrega');
+
 const routerFeminino = require('./routes/feminino');
 const routerPromocoes = require ("./routes/promocoes")
 const routerLogin = require('./routes/login');
@@ -36,6 +38,8 @@ const routerPoliticas = require('./routes/politicas');
 const routerProdutos = require('./routes/produtos');
 const routerSacola = require('./routes/sacola');
 const { use } = require('./routes/home');
+=======
+
 const routesUsuario = require('./routes/usuario');
 const routesPedido = require('./routes/pedido');
 const routesPoliticas = require('./routes/politicas');
@@ -46,11 +50,13 @@ const routesCadastro = require('./routes/usuario')
 
 
 
+
 app.use(session({secret: 'MeninaDosSapatos'}))
 
 app.use('/', routesHome);
 app.use('/dadosDePagamento', dadosDePagamento);
 app.use('/enderecoDeEntrega', routerenderecoDeEntrega);
+
 app.use('/feminino', routerFeminino);
 app.use('/promocoes', routerPromocoes)
 app.use('/login', routerLogin);
@@ -59,6 +65,8 @@ app.use('/Perfil', routerPerfil);
 app.use('/politicas', routerPoliticas);
 app.use('/produtos', routerProdutos);
 app.use('/sacola', routerSacola);
+=======
+
 app.use('/Login', routesUsuario);
 app.use('/Pedido', routesPedido);
 app.use('/Politicas', routesPoliticas);
